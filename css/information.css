@@ -1,0 +1,259 @@
+li.Inf_btn a,li.Inf_btn p{
+    color: #FF9B2F;
+}
+.transform{
+
+    height: 200px;
+    /* border: 1px solid red; */
+    display: flex;
+    margin: 0 auto;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.item,.item1{
+    width: 100px;
+    height: 100px;
+    padding: 8px;
+    margin-left: 20px;
+}
+
+.item1 h3{
+    margin-left: 4px;
+    color: #0FA36C;
+    margin-top: 10px;
+}
+
+h3{
+    margin-top: 10px;
+    margin-left:4px;
+    font-size:1rem;
+}
+/* 動物園現況 */
+
+
+.img{
+    width: 27px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+h5{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:15px ;
+    font-size: 1.4rem;
+    letter-spacing:.2rem;
+    margin: 14px;
+}
+/* butten */
+.all{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    /* margin-top: 275px; */
+}
+
+.butten{
+    position: relative; 
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    background-color: #3DBFAC;
+    margin: 10px;
+    margin-top:-10px
+} 
+.butten_1{
+    position: relative; 
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid #707070;
+    margin: 10px;
+    margin-top:-10px
+  } 
+
+.butten_1 a{
+    font-size: 0.9rem;
+    color: #707070;
+}  
+
+
+.butten a{
+    font-size: 0.9rem;
+    color: #fff;
+}
+.ticket{
+    width: 600px;
+    height: 163px;
+    margin: 0 auto;
+    margin-top:-29px;
+    list-style: none;
+    border-bottom:solid 2px #eccb0f;
+}
+
+.remark{
+    width: 560px;
+    height: 163px;
+    list-style: none;
+    margin: 0 auto;
+    font-size:0.5rem;
+    letter-spacing:2px;
+    line-height: 180%;
+    color: #707780;
+    padding: 10px;
+}
+.remark p{
+    font-size:0.8rem;
+    letter-spacing:2px;
+    line-height: 180%;
+    color: #707780;
+    font-weight:900;
+}
+
+/* 下面框 */
+
+.information{
+    /* border: 1px solid red; */
+    width: 800px;
+    height: 1134px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.text{
+   display: flex;
+   justify-content: center;
+   flex-direction: initial;
+}
+
+.text img{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+/* 購票資訊 */
+
+.top{
+    width: 800px;
+    height: 457px;
+    background-image: url(../images/decoration/artboard\ –\ 36.svg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size:800px;
+}
+
+div.top_text{
+    height: 370px;
+    
+}
+
+div.top_text > p{
+    height: 370px;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 0px 15px 15px 0px;
+    padding: 140px 50px;
+    font-weight: bold;
+}
+/* 交通資訊 */
+
+.under{
+    width: 785px;
+    height: 630px;
+    border-radius: 15px;
+    border: 4px solid #3DBFAC;
+    background-color: rgb(255, 255, 255);
+    background-size: 100%;
+    margin: 0 auto;
+    margin-top: 22px;
+    
+}
+
+.under h2 img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+   
+}
+
+.under h2{
+    display: flex;
+    margin:20px 290px;
+}
+
+/* traffic_icon */
+
+.traffic_icon img{
+    width: 80px;
+    height: 30%;
+    margin: 15px;
+    
+}
+.traffic_icon{
+    width: 600px;
+    display: flex;
+    margin: -15px auto;
+    margin-left: 58px;
+}
+
+/* traffic_map */
+
+.traffic_map{
+    width: 700px;
+    height: 380px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius:15px;
+    background-image: url(../images/traffic_icon/bigcar.jpg);
+    background-size:116%;
+}
+
+
+
+/* 頁尾 */
+
+.footer{
+    display: flex;
+    align-items: flex-end;
+}
+
+/* 版頭換色文字效果 */
+
+.nav li .Inf_btn {
+    color:#FF9B2F;
+}
+
+.nav li .Inf_btn >p {
+    color:#FF9B2F;
+    /* border-bottom: 3px solid #FF9B2F; */
+}
+/* 右邊浮動 */
+
+div.right_sidebar {
+    width: 100%;
+ } 
+
+div.right_sidebar .float{  
+    z-index: 5;
+    width:90px;
+    float: right;
+    position: fixed;
+    right: 0px;/*右邊*/
+    top:106px;
+}

@@ -1,0 +1,37 @@
+/* footer */
+ul.right{
+    list-style: none;
+    font-weight: bold;
+    padding: 10px;
+   
+}
+footer{
+    font-size: 0.5rem;
+    color: #707780;
+    height: 160px;
+    background-color: #EAECF2;
+    width: 100%;
+    /* border: 1px solid chartreuse; */
+    letter-spacing:2px;
+    line-height: 180%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+div.prompt{
+    /* border:1px solid orangered; */
+    font-size: 0.3rem;
+    width: 390px;
+    height: 12px;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+.footer_logo{
+    width: 120px;
+}

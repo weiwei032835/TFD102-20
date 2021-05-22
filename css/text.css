@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica,"黑體-繁","Heiti TC","微軟正黑體","Microsoft JhengHei", sans-serif;
+   
+}
+
+h4{
+    
+    font-size: 15px;
+    display: inline-block;
+    border:1.5px solid #FF9B2F;
+    background-color: rgb(255, 255, 255);
+    color: #FF9B2f;
+    border-radius: 3px;
+    padding: 1px 8px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    }
+
+h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.4rem;
+    color: #707780;
+    letter-spacing: .2rem;
+}
+
+p{
+    color: #707780;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    line-height: 160%;
+    text-decoration: none;
+}
+
+h3{
+    color: #707780;
+    letter-spacing: .1rem;
+    font-size: 1.1rem;
+}
+
+h5{
+    color: #0FA36C;
+    letter-spacing: .1rem;
+    font-size: 1.1rem;
+}

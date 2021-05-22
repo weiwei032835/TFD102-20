@@ -1,0 +1,226 @@
+.transform{
+
+    height: 120px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.item,.item1{
+    /* width: 100px; */
+    height: 100px;
+    padding: 8px;
+    margin-left: 20px;
+}
+
+.item1 h3{
+    margin-left: 4px;
+    color: #0FA36C;
+    margin-top: 10px;
+}
+
+h3{
+    margin-top: 10px;
+    margin-left:4px;
+}
+/* 動物園現況 */
+
+.situation{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.situation img{
+    width: 27px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+h5{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:15px ;
+    font-size: 1.4rem;
+    letter-spacing:.2rem;
+}
+
+.under{
+    width: 400px;
+    height: 300px;
+}
+
+/* 兩個方框 */
+
+.introduction{
+    /* border: 1px solid red; */
+    width: 800px;
+    height: 1080px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.text{
+   display: flex;
+   margin-left:5 px ;
+   flex-direction: column;
+}
+
+.text img{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+/* 右邊浮動 */
+
+div.right_sidebar {
+    width: 100%;
+ } 
+
+div.right_sidebar .float{  
+    z-index: 5;
+    width:90px;
+    float: right;
+    position: fixed;
+    right: 0px;/*右邊*/
+    top:106px;
+}
+/* 動物園現況 */
+
+.top{
+    width: 800px;
+    height: 370px;
+    border-radius: 15px;
+    /* border: 1px solid rgb(68, 0, 255); */
+    background-image: url(../images/introduction/intro_1.jpg);
+    background-size: 100%;
+}
+
+div.top_text{
+    height: 370px;
+    margin: 0px 0px 0px 160px;
+}
+
+div.top_text > p{
+    height: 370px;
+    background-color: hsla(0, 0%, 98%, .8);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 0px 15px 15px 0px;
+    padding: 140px 50px;
+    font-weight: bold;
+}
+
+.under{
+    width: 800px;
+    height: 370px;
+    border-radius: 15px;
+    /* border: 1px solid rgb(68, 0, 255); */
+    background-image: url(../images/introduction/intro_2.jpg);
+    background-size: 100%;
+}
+
+div.other_text{
+    height: 370px;
+    margin: 0px 160px 0px 0px;
+}
+
+div.other_text > p{
+    height: 380px;
+    background-color: hsla(0, 0%, 98%, .8);
+    width: 100%;
+    /* text-align: center; */
+    padding: 5px 0;
+    border-radius: 15px 0px;
+    padding: 140px 50px;
+    font-weight: bold;
+}
+
+div.top > p{
+    margin: 160px 40px 80px 120px;
+}
+
+
+.director{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    background-size: 100%; 
+    background-image: url(../images/decoration/artboard\ –\ 22.svg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.d2{
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    border: 1px solid rgb(68, 0, 255);
+}
+
+ul.card{
+    width: 300px;
+    list-style: none;
+    margin: 30px 30px 20px 50px;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.card p{
+    color: #3FB589;
+    font-weight: bold;
+    
+}
+
+.footer{
+    display: flex;
+    align-items: flex-end;
+}
+ /* 底紋插圖  */
+
+ .illustration{
+    background-image:url(../images/decoration/artboard\ –\ 18.svg) ;
+    height: 120px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+
+.all {
+    width: 1200px;
+    height: 0px;
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.a img {
+    width: 150px;
+    height: 270px;
+    margin-left: -500px;
+}
+
+div.b{
+    width: 180px;
+    margin: 0 auto;
+    margin-left: 740px;
+    margin-top: -74px;
+}
+
+div.c{
+    margin-top: -120px;
+    position: relative;
+}
+
+/* 版頭換色文字效果 */
+
+.nav li .Int_btn  {
+    color:#FF9B2F;
+}
+
+.nav li .Int_btn >p {
+    color:#FF9B2F;
+    /* border-bottom: 3px solid #FF9B2F; */
+}

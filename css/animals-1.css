@@ -1,0 +1,249 @@
+li.animals_btn a,li.animals_btn p{
+    color: #FF9B2F;
+}
+
+/* 動物之星 */
+.star {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+}
+div.star_list{
+    /* border-bottom: solid 2px #eccb0f; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 900px;
+    height: 200px;
+}
+
+.star_list img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.bear ,.hippo,.orangutan,.raccoon,.tiger{
+    display: inline-grid;
+}
+
+.star h2{
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    font-size: 1.5rem;
+}
+
+.star h2 img{
+    width: 27px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#section .star{
+    width: 100%;
+    padding-left:15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /* flex-direction:row* 由左至右*/
+}
+
+/* 動物園現況 */
+
+.situation{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.situation img{
+    width: 27px;
+    margin-right: 8px;
+    margin-left: 5px;
+}
+h5{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:15px ;
+    font-size: 1.5rem;
+    letter-spacing:.2rem;
+}
+
+.under{
+    width: 400px;
+    height: 300px;
+}
+
+/* 兩個方框 */
+
+
+.introduction{
+    border: 1px solid red;
+    width: 800px;
+    height: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.text{
+   display: flex;
+   margin-left:5 px ;
+   flex-direction: column;
+}
+
+.text img{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    
+}
+.top_photo {
+    width: 380px;
+    height: 370px;
+    border-radius: 15px 0px 0px 15px;
+    margin-left: -162px;
+    background-size: contain; /*照片其中是一百趴*/
+}
+
+/* 動物簡介*/
+
+.box{
+
+    width: 872px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: grid;
+    gap:30px 30px;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    grid-template-areas: 
+    "a1 a1 . . ."
+    "a1 a1 . a6 a6"
+    ". . . a6 a6"
+    "a10 a10 . . ."
+    "a10 a10 . . ."
+    ;
+    
+}
+
+div.box div.grid-item1{
+    grid-area: a1;
+}
+
+div.box div.grid-item6{
+    grid-area: a6;
+}
+
+div.box div.grid-item10{
+    grid-area: a10;
+}
+
+/* 頁尾 */
+.footer{
+    display: flex;
+    align-items: flex-end;
+}
+ /* 底紋插圖  */
+ 
+ .at{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 286px;
+    margin: 0 auto;
+    margin-right: 180px;
+    margin-top: -168px;
+
+}
+ .illustration{
+    /* border: 1px solid blue; */
+    height: 200px;
+    width: 100%;
+    display: flex;
+    margin-top: -100px;
+    position: relative;
+ }
+
+.a img {
+    width: 250px;
+    height: 200px;
+    margin-left: -160px;
+    position: relative;
+    top:-90px;
+}
+
+.illustration .b {
+    background-image: url(../images/decoration/artboard\ –\ 32.svg);
+    width: 206px;
+    margin-top: -32px;
+    margin-left: 628px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.illustration .c {
+    background-image: url(../images/decoration/artboard\ –\ 30.svg);
+    width: 430px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.d img{
+    width: 400px;
+    height: 200px;
+    margin-left: -584px;
+}
+
+
+h3{
+    font-size: 1.2rm;
+    color: #3DBFAC;
+    margin: 0 auto;
+}
+
+.grass4{
+    transform:rotate(40deg) ;
+}
+.grass4-1{
+    transform:rotate(352deg) ;
+}
+
+/* 版頭換色文字效果 */
+
+.nav li .animals_btn >p{
+    color:#FF9B2F;
+    /* border-bottom: 3px solid #FF9B2F; */
+}
+
+.nav li .animals_btn  {
+    color:#FF9B2F;
+}
+
+/* 右邊浮動 */
+
+div.right_sidebar {
+    width: 100%;
+ } 
+
+div.right_sidebar .float{  
+    z-index: 5;
+    width:90px;
+    float: right;
+    position: fixed;
+    right: 0px;/*右邊*/
+    top:106px;
+}

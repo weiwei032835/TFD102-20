@@ -1,0 +1,555 @@
+*{
+    padding: 0;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.item.p{
+    margin: 8px;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica,"黑體-繁","Heiti TC","微軟正黑體","Microsoft JhengHei", sans-serif;
+    
+}
+ 
+
+
+div .man {
+    width: 20px;
+    height: 20px;
+    border: 1px solid ;
+}
+
+header nav ul.icon li{
+  margin-left: 10px;
+}
+header ul.icon{
+    position: absolute;
+    right: 18px;
+    top: -10px;
+    font-size: -2px;
+  }
+
+ul.icon{
+    font-size: 0;
+    padding: 30px 50px;
+  }
+
+.icon img{
+    width: 40px;
+    height: 40px;
+  }
+
+article.card{
+    /* border: 1px  solid #d64a03; */
+    width: 800px;
+    height: 400px;
+    /* height: 60%; */
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+div.banner{
+    font-size: 0;
+    margin: 0 auto;
+    height: 100%;
+}
+
+article.card div.banner > img{
+    max-width: 110%;
+    box-sizing: right 80px bottom 80px;
+    position:absolute;
+    top:-100px;
+    margin: -26px 0px;
+}
+
+/* --main共用-- */
+#news{
+    /* height: 450px; */
+    /* background: #e2dfde; */
+    padding-top: 2rem;
+}
+section h2{
+    font-family: "Josefin Sans", sans-serif;
+    color: #707780;
+    letter-spacing: .2rem;
+    display: flex;
+}
+
+
+.avater {
+    /* border:1px solid violet; */
+    display: inline-block;
+    position: absolute;
+    width: 180px;
+    margin-left: -90px;
+    top: 270px;
+    z-index: 1;
+}
+
+section.news{
+    border: 1px solid black;
+    width: 30%;
+    margin: 0 auto;
+  }
+
+div.list{
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+.list div {
+    width: 300px;
+    height: 320px;
+    /* border: 2px solid #d64a03; */
+    box-sizing: border-box;
+    background-color: rgb(255, 251, 246);
+    border-radius:0 0 25px 25px;
+    box-shadow: 2px 2px 5px #999;
+}   
+   
+.news{
+    padding-top: 50px;
+    position: relative;
+    /* border:3px solid brown; */
+}
+.list div p{
+    width: 90%;
+    margin: 3% auto;
+}
+#news figcaption{
+    width: 90%;
+    margin: 4% auto;
+    text-align: left;
+    border-bottom: solid 2px #eccb0f;
+    font-size: 1rem;
+}
+
+#news h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#news h2 img {
+    width: 27px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/* #news  */
+
+div.place_img {
+    width: 120px;
+    /* border: 1px solid red; */
+    height: 200px;
+    background-image:url( "../images/decoration/artboard\ –\ 7-01.svg");
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    right: 0px;
+}
+
+div.place_img2 {
+    width: 180px;
+    /* border: 1px solid red; */
+    height: 200px;
+    background-image:url( "../images/decoration/artboard\ –\ 3-01.svg");
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: 1050px;
+}
+img{ 
+    width: 100%;
+    display:block;
+} 
+
+.butten{
+    margin: 20px auto;
+}
+
+.butten {
+  position: relative; 
+  outline: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 30px;
+  width: 100px;
+  opacity: 1;
+  background-color: #3DBFAC;
+  /* border: 1px solid rgba(95, 108, 131, 0.6);*/
+} 
+
+.butten a{
+    font-size: 0.9rem;
+    color: #fff;
+}
+/* 動物之星 */
+.star {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+div.star_list{
+    /* border-bottom: solid 2px #eccb0f; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 900px;
+    height: 200px;
+}
+
+.star_list img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.star h2{
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.star h2 img{
+    width: 27px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#section .star{
+    width: 100%;
+    padding-left:15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /* flex-direction:row* 由左至右*/
+}
+
+/* 遊園叮嚀 */
+
+.outer_block{
+    line-height: 45px;
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.remind{
+    padding: 30px;
+    width: 100%;
+    background-color: #EAECF2;
+}
+.remind > ul {
+    background-color: khaki;
+    display: flex;
+    justify-content:center;
+    height: 0;
+}
+/* .remind_hr{
+    vertical-align:middle ;
+} */
+.zoo_img{ 
+    width: 300px;
+    height: 30px;
+}
+.outer_block{
+    justify-content: space-between;
+    align-items: center;
+    height: 230px;
+}
+.outer_block img{
+    width:300px;
+    height:300px
+}
+ .item {
+    list-style:none
+  } 
+
+.item p{
+    line-height: 192%;
+  }
+
+/* 景點介紹*/ 
+.attractions h2 img{
+    width: 60px;
+    display: flex;
+    height: 38px;
+}
+
+
+.attractions h2{   
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.attractions{
+    align-items: center;
+    /* justify-content: center; */
+    padding: 15px;
+    width: 100%;
+    height: 400px;
+    /* background-color: #61a0f8; */
+    margin: 0 auto;
+   
+}
+
+.radius_list img{
+    width: 400px;
+    height: 300px;
+    border-radius: 30px  90px 30px 30px;
+    
+}
+.attractions .text {
+  /* flex: 1; */
+  /* background-color: #f08bc3; */
+  margin: 5px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  width:455px;
+}
+
+.flex{
+    /* background-color: #f08bc3; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+}
+.radius_list{
+  
+    display: flex;
+    width: 400px;
+    height: 300px;
+    /* border: 1px solid red; */
+    border-radius: 30px  90px 30px 30px;
+    /* background-color: #3DBFAC; */
+    box-shadow: -10px -6px 0px #3DBFAC ;
+    
+}
+
+/* 景點介紹動態 */
+
+.black{
+    width: 100px;
+    color: white;
+    line-height: 100px;
+    position: absolute;
+    background: blue;
+    top: 60px;
+    left: 60px;
+    z-index: 3;
+    border-radius: 30px  90px 30px 30px;
+}
+
+
+/* 圖片輪播 */
+.carousel_text {
+    display: flex;
+    margin: 0 auto;
+}
+.carousel > img{
+    width: 240px;
+    margin-right: 900px;  
+}
+
+.marquee {
+    height: 120px;
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+    float:left;
+  }
+  
+.marquee img{
+    height: 120px;
+    width: 120px;
+    padding: 5px;
+}
+.marquee div {
+    display: block;
+    width: 1200px;
+    height: 130px;
+    position: absolute;
+    
+    animation: marquee 14s linear infinite;
+  }
+  
+  .marquee span {
+    float: left;
+  
+  }
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+
+
+/* 右邊浮動 */
+
+div.right_sidebar {
+    width: 100%;
+ } 
+
+div.right_sidebar .float{  
+    z-index: 5;
+    width:90px;
+    float: right;
+    position: fixed;
+    right: 0px;/*右邊*/
+    top:106px;
+}
+
+
+/* footer */
+.footer_img{
+    width: 146px;
+    padding: 10px;
+    font-size: 0;
+}
+ul.right{
+    list-style: none;
+    font-weight: bold;
+    padding: 10px;
+   
+}
+footer{
+    font-size: 0.5rem;
+    color: #707780;
+    height: 160px;
+    background-color: #EAECF2;
+    width: 100%;
+    /* border: 1px solid chartreuse; */
+    letter-spacing:2px;
+    line-height: 180%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.prompt{
+    /* border:1px solid orangered; */
+    font-size: 0.3rem;
+    width: 390px;
+    height: 12px;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+ /* 圖輪播套件  */
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+    /* 圖輪播套件結束  */
+    
+    
+    .header{
+        /* border: 1px red solid; */
+        box-sizing:border-box;
+        background: #EAECF2;
+        height: 80px;
+        background-size: cover;
+    }
+    .div.header ul a{
+        padding-bottom: 26px;
+    }
+    
+    div.header a{
+        font-size: 16px;
+        text-decoration:none;
+        bottom: 20px;
+        line-height: 18px;
+    }
+    
+    .header li{
+        /* border: 1px solid blue; */
+        margin: 2px 12px 0 35px;
+    }
+    
+    .header_logo{
+        width: 194px;
+        height: 25%;
+    }
+    
+    div.header ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0px;
+        justify-content: center;
+        padding: 7px 20px;
+        letter-spacing:2px;
+        text-align:center;
+        font-weight:550;
+        margin-left:40px;
+    }
+    
+    .header p{
+        line-height: 150%;
+        color: #8d8a88;
+        font-weight:500;
+    }
+    .icon {
+        display: flex;
+    }
+    
+    .icon img{
+        width:35px;
+        height: 35px;   
+    }
+    
+    .icon li{
+       margin-left: 10px;
+    }
+    
+   

@@ -55,7 +55,7 @@ article.card div.banner > img{
 
 .round img{
     /* border:1px solid violet; */
-    width: 180px;
+    width: 16%;
     margin-left: 72px;
     z-index: 1;
 }

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/news_1.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylesheet" href="./css/aos/css/aos.css">
 </head>
 
 <body>
@@ -77,13 +77,13 @@
         
           <!-- 版頭 -->
           <section class="news_banner">
-            <img src="./images/news/30.jpg" alt="">
+            <img src="./images/news/30.jpg" alt="" >
         </section>
 
         <!-- 新聞1 -->
-        <div class="grid_container">
+        <div class="grid_container" >
 
-            <div class="grid_item1">
+            <div class="grid_item1" >
                 <img src="./images/news/04.jpg" class="news_photo">
             </div>
 
@@ -103,9 +103,9 @@
             </div>
 
         </div>
-        <div class="grid_container">
+        <div class="grid_container" >
 
-            <div class="grid_item1">
+            <div class="grid_item1" >
                 <img src="./images/news/05.jpg" class="news_photo">
             </div>
 
@@ -127,7 +127,7 @@
         </div>
 
         <!-- 新聞2 -->
-        <div class="news">
+        <div class="news" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
             <div class="wrap">
                 <div class="item">
                     <a href="#"></a>
@@ -155,7 +155,7 @@
                 </div>
 
             </div>
-            <div class="news">
+            <div class="news" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
                 <div class="wrap">
                     <div class="item">
                         <a href="#"></a>
@@ -222,6 +222,20 @@
 
 
 </body>
+    <script src="./css/aos/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+        
+    </script>
 
 </html>

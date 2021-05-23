@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./css/index copy.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylesheet" href="./js/index.js">
+    <link rel="stylesheet" href="./css/aos/css/aos.css">
 </head>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -105,16 +106,28 @@
             <div class="butten"><a href="./news.html">more</a></div>
 
             <!-- 動物之星 -->
-            <section class="star">
+            <section class="star" data-aos="zoom-in-up" data-aos-duration="500">
                 <h2><img src="./images/decoration/icon_grass2.svg">動物之星<img src="./images/decoration/icon_grass2.svg">
                 </h2>
 
-                <div class="star_list">
-                    <img src="./images/animal_mvp/bear/bear.png" alt="bear">
-                    <img src="./images/animal_mvp/hippo/hippo.png" alt="hippo">
-                    <img src="./images/animal_mvp/orangutan/orangutan.png" alt="orangutan">
-                    <img src="./images/animal_mvp/raccoon/raccoon.png" alt="raccoon">
-                    <img src="./images/animal_mvp/tiger/tiger.png" alt="orangutan">
+               
+                    <div class="star_list">
+                        <div class="bear"><img src="./images/animal_mvp/bear/bear.png" alt="bear">
+                            <h3>馬來熊</h3>
+                        </div>
+                        <div class="hippo"><img src="./images/animal_mvp/hippo/hippo.png" alt="hippo">
+                            <h3>河馬</h3>
+                        </div>
+                        <div class="orangutan"><img src="./images/animal_mvp/orangutan/orangutan.png" alt="orangutan">
+                            <h3>紅毛猩猩</h3>
+                        </div>
+                        <div class="raccoon"><img src="./images/animal_mvp/raccoon/raccoon.png" alt="raccoon">
+                            <h3>北美浣熊</h3>
+                        </div>
+                        <div class="tiger"><img src="./images/animal_mvp/tiger/tiger.png" alt="tiger">
+                            <h3>孟加拉虎</h3>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -245,7 +258,14 @@
 
 
 </body>
+
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./css/aos/js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 <script>
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
@@ -254,6 +274,9 @@
             clickable: true
         }
     });
+    
 </script>
+
+
 
 </html>

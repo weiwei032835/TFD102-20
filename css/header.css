@@ -94,4 +94,6 @@ header p{
     color: #FF9B2F;
 }
 
-
+.nav li p > p:hover{
+    color: #FF9B2F;
+}

@@ -83,3 +83,15 @@ header p{
 .icon li{
    margin-left: 10px;
 }
+
+/* 特效 */
+
+.nav ul  > a:hover{
+    color: #FF9B2F;
+}
+/* P出不來*/
+.nav li  > a:hover{
+    color: #FF9B2F;
+}
+
+

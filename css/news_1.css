@@ -117,10 +117,10 @@ div.grid_item2 h4{
 
 img{ 
     width: 100%;
-    display:block;
+   
 } 
 
-.news h2{
+div.news h2{
     display: flex;
     justify-content: center;
     align-items: center;

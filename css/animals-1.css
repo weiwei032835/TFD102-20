@@ -19,6 +19,7 @@ div.star_list{
     /* align-items: center; */
     width: 900px;
     height: 200px;
+    
 }
 
 .star_list img{
@@ -26,8 +27,18 @@ div.star_list{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform 400ms ease-out;
 }
+
+.star_list img:hover {
+	transform: scale(1.15);
+    /* 外框出不來 */
+    border-style:2px solid #3DBFAC;
+}
+
+
 
 .bear ,.hippo,.orangutan,.raccoon,.tiger{
     display: inline-grid;

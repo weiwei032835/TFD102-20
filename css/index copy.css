@@ -97,6 +97,7 @@ img{
     margin: 0 auto;
     /* border: 1px solid red; */
     justify-content: center;
+    height:330px;
 }
 
 .news .item{
@@ -181,6 +182,7 @@ div.star_list{
     /* align-items: center; */
     width: 900px;
     height: 200px;
+    
 }
 
 .star_list img{
@@ -188,8 +190,18 @@ div.star_list{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform 400ms ease-out;
 }
+
+.star_list img:hover {
+	transform: scale(1.15);
+    /* 外框出不來 */
+    border-style:2px solid #3DBFAC;
+}
+
+
 
 .bear ,.hippo,.orangutan,.raccoon,.tiger{
     display: inline-grid;
@@ -225,16 +237,7 @@ div.star_list{
     margin: 0 auto;
 }
 
-/* 外框出不來 */
 
-.star_list :hover{
-
-    border-style:2px solid #3DBFAC;
-}
-
-.bear:hover .hover_1{
-    display:block;
-}
 
 .hover{
     display:none;
@@ -281,6 +284,8 @@ div.star_list{
 
 .item p{
     line-height: 287%;
+    display:inline-block;
+    margin-left:19px;
   }
 
 .remind {
@@ -289,20 +294,26 @@ div.star_list{
 }
 
 /* 景點介紹*/ 
-.attractions h2 img{
-    display: flex;
+.text h2 img{
+    width: 32px;
     height: 38px;
+    /* border: 1px  solid #d64a03; */
+    margin: -10px 0px;
+    margin-right:5px;
 }
 
+.text{
+    /* border: 1px  solid #d64a03; */
+    top:20px;
+}
 .attractions{
     align-items: center;
     /* justify-content: center; */
     padding: 15px;
-    width: 100%;
+    width: 900px;
     height: 400px;
-    /* background-color: #61a0f8; */
     margin: 0 auto;
-   
+    /* border: 1px  solid #d64a03; */
 }
 
 .radius_list img{
@@ -312,12 +323,10 @@ div.star_list{
     
 }
 .attractions .text {
-  margin: 5px;
+  margin: 10px;
   display: flex;
   justify-content: end;
-  color: white;
   font-size: 2rem;
-  margin-left: 180px;
 }
 
 .flex{
@@ -326,6 +335,7 @@ div.star_list{
     align-items: center;
     justify-content: center;
     column-gap: 40px;
+    margin-top: 30px;
 }
 .radius_list{
   

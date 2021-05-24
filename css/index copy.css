@@ -213,7 +213,7 @@ div.star_list{
     justify-content: center;
     align-items: center;
     /* position: relative; */
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .star h2 img{
@@ -271,7 +271,7 @@ div.star_list{
 .outer_block{
     justify-content: space-between;
     align-items: center;
-    height: 230px;
+    height: 210px;
     margin-left: 0px;
 }
 .outer_block img{

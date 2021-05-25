@@ -189,8 +189,8 @@ div.top_text > p{
     
 }
 .traffic_icon{
-    width: 600px;
-    display: flex;
+    /* width: 600px;
+    display: flex; */
     margin: -15px auto;
     margin-left: 58px;
 }
@@ -241,3 +241,6 @@ div.right_sidebar .float{
     right: 0px;/*右邊*/
     top:106px;
 }
+
+
+	

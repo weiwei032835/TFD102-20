@@ -70,6 +70,8 @@ div.star_list{
     /* flex-direction:row* 由左至右*/
 }
 
+
+
 /* 動物園現況 */
 
 .situation{
@@ -152,6 +154,7 @@ h5{
 
 div.box div.grid-item1{
     grid-area: a1;
+    position:relative;
 }
 
 div.box div.grid-item6{
@@ -162,10 +165,42 @@ div.box div.grid-item10{
     grid-area: a10;
 }
 
-.box :hover{
+.box img:hover{
     box-shadow:0px 0px 10px rgb(0 0 0 / 20%);
     color: #3DBFAC;
 }
+
+/* 動物簡介文字 */
+
+.mask  {
+    width: 330px;
+    height: 330px;
+    background-color:#18171787;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition:.3s;
+    cursor:pointer;
+}
+
+/* :hover 只hover到字 */
+
+.mask  h2  {
+    visibility:visible;
+    position: absolute;
+    margin: 0;
+    color: white;
+    left: 40%;
+    bottom: 45%;
+}
+
+/* class="invisible 不可見的屬性? */
+
+
+
+
+
+
 
 /* 頁尾 */
 .footer{

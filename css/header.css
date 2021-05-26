@@ -2,6 +2,7 @@
     margin: 0px;
     font-family: Arial, Helvetica,"黑體-繁","Heiti TC","微軟正黑體","Microsoft JhengHei", sans-serif;
     text-decoration:none;
+   
 }
 
 main{
@@ -23,7 +24,7 @@ body {
     min-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-   
+    
 }
 .nav{
     width: 1140px;

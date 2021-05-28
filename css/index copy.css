@@ -109,7 +109,7 @@ img{
 }
 
 
-.news h3:hover {
+.news .item h3:hover {
     background-color: #9ECE0C;
     color: white;
   }

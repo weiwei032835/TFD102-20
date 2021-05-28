@@ -1,6 +1,4 @@
-li.animals_btn a,li.animals_btn p{
-    color: #FF9B2F;
-}
+
 
 /* 動物之星 */
 .star {
@@ -35,8 +33,6 @@ div.star_list{
 
 .star_list img:hover {
 	transform: scale(1.15);
-    /* 外框出不來 */
-    border-style:2px solid #3DBFAC;
 }
 
 
@@ -164,41 +160,120 @@ div.box div.grid-item6{
 div.box div.grid-item10{
     grid-area: a10;
 }
+/* hover效果 */
 
-.box img:hover{
+.grid-item:hover img{
     box-shadow:0px 0px 10px rgb(0 0 0 / 20%);
-    color: #3DBFAC;
 }
 
-/* 動物簡介文字 */
+.grid-item:hover .mask{
+    opacity: 1;
+}
 
-.mask  {
+.grid-item:hover h2{
+    opacity: 1;
+}
+
+.grid-item:hover .mask_2{
+    opacity: 1;
+}
+
+/* h3 */
+
+.grid-item:hover h3{
+    opacity: 1;
+}
+
+.grid-item:hover .mask_3{
+    opacity: 1;
+}
+
+
+/* 天竺鼠 */
+
+.mask{
     width: 330px;
     height: 330px;
     background-color:#18171787;
     position: absolute;
     top:0;
     left: 0;
-    transition:.3s;
+    transition:1s;
     cursor:pointer;
+    opacity: 0;
 }
 
-/* :hover 只hover到字 */
+.mask_3 h2{
+    transition:.3s;
+    position: absolute;
+    margin: 0;
+    color: white;
+    left: 36%;
+    bottom: 45%;
+    opacity: 0;
+}
 
-.mask  h2  {
-    visibility:visible;
+
+
+.mask h2 {
+    transition:.3s;
     position: absolute;
     margin: 0;
     color: white;
     left: 40%;
     bottom: 45%;
+    opacity: 0;
 }
 
-/* class="invisible 不可見的屬性? */
+/* 馬來猴 */
 
+.mask_2{
+    width: 152px;
+    height: 152px;
+    transition:.3s;
+    background-color:#18171787;
+    position: relative;
+    cursor:pointer;
+    opacity: 0;
+    top:-104%;
+    
+}
 
+.mask_2 h2 {
+    transition:.3s;
+    font-size: 1.2rem;
+    position: absolute;
+    margin: 0;
+    color: white;
+    left: 24%;
+    bottom: 45%;
+    opacity: 0;
+}
 
+/* 山羌 */
 
+.mask_3 {
+    width: 330px;
+    height: 330px;
+    background-color:#18171787;
+    position: relative;
+    cursor:pointer;
+    opacity: 0;
+    top:-101%;
+   
+}
+
+.mask_2 h3 {
+    transition:.3s;
+    font-size: 1.2rem;
+    position: relative;
+    margin: 0;
+    color: white;
+    left: 16%;
+    bottom: 45%;
+    opacity: 1;
+    top:42%;
+}
 
 
 

@@ -14,6 +14,13 @@ div.butten{
     display: flex;
 }
 
+.all button{
+    outline: none;
+    background: transparent;
+    border: 0;
+    padding:0;
+}
+
 .item svg{
     fill: #0FA36C;
 }
@@ -149,10 +156,28 @@ div.grid_item2 {
     /* border: 6px solid red; */
     margin: 0 auto;
 }
+
 .place{
     width: 150px;
     height: 150px;
     margin-bottom: 30px;
+    cursor:pointer;
+    opacity: 1;
+}
+
+/* :hover出不來 */
+
+.mask{
+    color:#0e000087;
+    width: 150px;
+    height: 150px;
+    top:0;
+    left: 0;
+}
+
+div.place :hover{
+    color:#18171787;
+
 }
 
 

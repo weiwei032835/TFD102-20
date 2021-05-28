@@ -65,8 +65,9 @@ h5{
 
 .text{
    display: flex;
-   margin-left:5 px ;
-   flex-direction: column;
+   width: 600px;
+  
+   /* padding: 80px; */
 }
 
 .text img{
@@ -103,30 +104,6 @@ div.right_sidebar .float{
     background-size: 100%;
 }
 
-
-/* 簡介內文 */
-
-
-
-div.top_text > p{
-    /* height: 370px; */
-    /* background-color: hsla(0, 0%, 98%, .8); */
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 0px 15px 15px 0px;
-    padding: 135px 50px;
-    font-weight: bold;
-    position: absolute;
-    display: none;  /*暫時消失*/
-    transition:.5s;
-    pointer-events: none; /*覆蓋後下面元素可以執行*/
-}
-
-/* div.top_text > p{
-    display: block;
-} */ 
-/* 覆蓋後下面元素怎麼出來 */
-
 .under{
     width: 800px;
     height: 370px;
@@ -136,118 +113,149 @@ div.top_text > p{
     background-size: 100%;
 }
 
+/* 簡介 */
+
+div.top_text > p{
+   
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 0px 15px 15px 0px;
+    padding: 135px 50px;
+    font-weight: bold;
+    position: absolute;
+    transition:.5s;
+    
+}
+
 div.other_text{
     height: 370px;
     margin: 0px 160px 0px 0px;
 }
 
-div.top_text{
+.top_text{
     height: 370px;
     margin: 0px 0px 0px 160px;
+    opacity: 0;
+    
 }
 
-/* .top_text {
-    display: block;
-    width: 800px;
-    padding: 50px;
-    box-sizing: border-box;
-} */
-
-
-/* 白色hover */
-.inin_:hover{
-    width: 80%;
-}
 .inin_{
     float:right;
     height: 40%;
     background-color:rgba(255,255,255,.8);
     box-sizing:border-box;
+    height: 370px;
+    transition:.5s;
+    width: 200px;
+    
+}
+
+.in_text > p{
+    font-weight:700;
+    opacity: 1;
+    left: 84%;
+    top:22%;
+    font-weight: bold;
+    position: absolute;
+    transition:.5s;
+}
+
+/* 簡介滑過 */
+
+.top-section:hover  .in_text{
+    opacity: 0;
+}
+.top-section:hover  .top_text{
+    transition:.5s;
+    opacity: 1;
+
+}
+
+.top-section:hover .in_text{
+    float:right;
+    height: 40%;
+    box-sizing:border-box;
     z-index:2;
     transition:.5s;
-    animation: intxt 1s forwards;
     width: 200px;
-    /* display:none; */
+    
 }
 
-.in_text{
-    position: absolute; 
-    top:22%;
-    right: 12%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight:700;
+.top-section:hover .inin_{
+    background-color:rgba(255,255,255,.8);
+    width: 80%;
+
 }
 
-.in_text:hover{
-    display: none;
-}
-/* 下方選取區 */
+
+/* 現況 */
+
+
 
 div.other_text > p{
     height: 380px;
-    /* background-color: hsla(0, 0%, 98%, .8); */
-    /* width: 100%; */
-    /* text-align: center; */
-    padding: 5px 0;
-    border-radius: 15px 0px;
-    padding: 135px 50px;
     font-weight: bold;
-    display: none; 
-    pointer-events: none;
     position: absolute;
+    width: 580px;
+    transition:.5s;
+    top: 620px;
+    left: 70px;
+    opacity: 0;
 }
 
 div.other_1 p{
-     /* height: 380px; */
-     /* background-color: hsla(0, 0%, 98%, .8); */
      width: 100%;
      /* text-align: center; */
      padding: 5px 0;
-     border-radius: 15px 0px;
      padding: 135px 50px;
      font-weight: bold;
      
 }
 
-
-
-/* 白色色塊2 */
-
-/* 白色hover */
-
-.inin_2:hover{
-    width: 100%;
+.in_text2{
+    position: relative;
+    top:48%;
+    font-weight:700;
+    left: 30px;
+    opacity: 1;
 }
+
 .inin_2{
-    float:left;
+    width: 105%;
+}
+
+.inin_2{
     height: 100%;
     background-color:rgba(255,255,255,.8);
     box-sizing:border-box;
     z-index:2;
     transition:.5s;
-    animation: intxt 1s forwards;
     width: 200px;
-    /* display:none; */
+   
 }
 
-.in_text2{
-    position: relative;
-    height:380px;
-    /* display: flex; */
-    top:20%;
-    font-weight:700;
+/* 動物園現況hover */
+
+.under:hover .other_1{
+    opacity: 1;
+
 }
 
-/* .innnn{
-    height: 400px;
-    height: 600px;
-} */
-
-.in_text2:hover{
-   display: none;
+.underccc-section:hover  .in_text2{
+    opacity: 0;
+    transition:.5s;
 }
+
+.inin_2:hover{
+    width: 105%;
+}
+
+/* 滑過時底色白漢文字出現 */
+.underccc-section:hover .inin_2{
+    width: 105%;
+}
+
+
 
 /* 園區處長 */
 

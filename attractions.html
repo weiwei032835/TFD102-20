@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/text.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/attractions.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 
 </head>
 
@@ -67,13 +67,13 @@
 
             <div class="top">
                 <div class="top_text">
-                    <img src="./images/attractions/01-13.png" class="top_photo">
+                    <img src="./images/attractions/01-13.png" class="top_photo" id="img"> <!-- Jeff要加ID -->
                 </div>
 
-                <div class="grid_item2">
-                    <h3>享受親子好食光</h3>
-                    <h2>森林食堂</h2>
-                    <p> 座落在1號出入口旁的「森林食堂」，是新竹動物園內的親子餐廳，這棟全新的純白色建築，營造出宛如美術館般的簡約與優雅。
+                <div class="grid_item2" id="grid">
+                    <h3 id="h3">享受親子好食光</h3>
+                    <h2 id="h2">森林食堂</h2>
+                    <p id="p"> 座落在1號出入口旁的「森林食堂」，是新竹動物園內的親子餐廳，這棟全新的純白色建築，營造出宛如美術館般的簡約與優雅。
                         餐廳內通透的落地玻璃帷幕，讓中庭大樹及週邊街景映入眼簾，享受綠樹與光影相映成趣的視覺印象，這裡還有最吸引人的特色是在享用輕食的同時，
                         還能眺望窗外的伊蘭羚羊、鴕鳥和羊駝，讓動物朋友們陪你一起用餐喔。
 
@@ -83,9 +83,11 @@
 
                     <div class="all">
                         <div class="butten">
-                            <div><a href="#"><img src="./images/decoration/artboard – 26.svg" class="next_photo"></a>
+                            <div><button onclick="changePost('last')"><img src="./images/decoration/artboard – 26.svg"
+                                        class="next_photo"></button>
                             </div>
-                            <div><a href="#"><img src="./images/decoration/artboard – 27.svg" class="next_photo"></a>
+                            <div><button onclick="changePost('next')"><img src="./images/decoration/artboard – 27.svg"
+                                        class="next_photo"></button>
                             </div>
 
                         </div>
@@ -103,18 +105,18 @@
             </div>
 
             <div class="box">
-                <div class="place place1"><img src="./images/attractions/01-2.png"></div>
-                <div class="place place2"><img src="./images/attractions/01-3.png"></div>
-                <div class="place place3"><img src="./images/attractions/01-5.png"></div>
-                <div class="place place4"><img src="./images/attractions/01-9.png"></div>
-                <div class="place place5"><img src="./images/attractions/01-15.png"></div>
-                <div class="place place6"><img src="./images/attractions/01-19.png"></div>
-                <div class="place place7"><img src="./images/attractions/2.png"></div>
-                <div class="place place8"><img src="./images/attractions/3.png"></div>
-                <div class="place place9"><img src="./images/attractions/4.png"></div>
-                <div class="place place10"><img src="./images/attractions/5.png"></div>
-                <div class="place place11"><img src="./images/attractions/6.png"></div>
-                <div class="place place12"><img src="./images/attractions/7.png"></div>
+                <div class="place place1" data-index="0" class="-active"><div class="mask"><img src="./images/attractions/01-2.png"></div></div>
+                <div class="place place2" data-index="1"><img src="./images/attractions/3.png"></div>
+                <div class="place place3" data-index="2"><img src="./images/attractions/01-5.png"></div>
+                <div class="place place4" data-index="3"><img src="./images/attractions/01-9.png"></div>
+                <div class="place place5" data-index="4"><img src="./images/attractions/01-15.png"></div>
+                <div class="place place6" data-index="5"><img src="./images/attractions/01-19.png"></div>
+                <div class="place place7" data-index="6"><img src="./images/attractions/2.png"></div>
+                <div class="place place8" data-index="7"><img src="./images/attractions/01-3.png"></div>
+                <div class="place place9" data-index="8"><img src="./images/attractions/4.png"></div>
+                <div class="place place10" data-index="9"><img src="./images/attractions/5.png"></div>
+                <div class="place place11" data-index="10"><img src="./images/attractions/6.png"></div>
+                <div class="place place12" data-index="11"><img src="./images/attractions/7.png"></div>
             </div>
 
             <!-- 插圖 -->
@@ -156,16 +158,106 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 <script type="text/javascript"></script>
 <script>
 
-    // 切換事件 怎麼使用
-    
+    // // 圖片切換 圖片的連結 第一張初始值
+    // var imgArray = [
+    //     "./images/attractions/01-13.png",
+    //     "./images/attractions/01-14.png",
+    //     "./images/traffic_icon/01-10.png",
+    //     "./images/traffic_icon/01-9.jpg",
+    //     "./images/traffic_icon/01-1.jpg",
+    //     "./images/traffic_icon/01-19.jpg",
+    // ]
 
-    $(".btnFollow").click(function () {               //click事件
-        $("#chgicon").attr("src", "images/-.png");      //要更換的圖片位置
-    });
+    // var imgElement = document.querySelector('.top_text') // 先抓到要換圖的 div
+
+    // $('.box').click(function () {
+    //     $('.box').removeClass('-active') // 先移除所有的 active
+    //     $(this).addClass('-active') // 當前增加 active class
+    //     const index = $(this).attr('data-index') // 看 button 身上的 data-index 數值是什麼
+    //     console.log(index);
+    //     imgElement.style.backgroundImage = `url('${imgArray[index]}')`
+
+    //     // 對要換圖的 div，換上陣列排好順序的圖片， index 跟陣列有對上，就可以換上正確的圖
+    //     //$(".top_text").css('.place', `url(${imgArray[index]})`) // JQuery 這樣也可以
+
+    // })
+    // let indexPost = 0 
+
+
+
+    const textArray = [
+        // Jeff:將文字處理成陣列
+        {
+            h2: '森林食堂',
+            p: '座落在1號出入口旁的「森林食堂」，是新竹動物園內的親子餐廳，這棟全新的純白色建築，營造出宛如美術館般的簡約與優雅。餐廳內通透的落地玻璃帷幕，讓中庭大樹及週邊街景映入眼簾，享受綠樹與光影相映成趣的視覺印象，這裡還有最吸引人的特色是在享用輕食的同時，還能眺望窗外的伊蘭羚羊、鴕鳥和羊駝，讓動物朋友們陪你一起用餐喔。',
+            img: './images/attractions/01-13.png'
+        },
+        {
+            h2: '噴水池',
+            h3: '黃金英姿重現',
+            p: '噴水池被列名為新竹文化資產的歷史建築，跟大象門是同時期建造的景觀。水池中間有一尊造型有趣的抱魚小童，經過考古專家的修復後，園方讓它回到最原始的模樣。 這座圓形的噴水池，可是乘載了超過三代新竹人的歡樂回憶；許多新竹人會在下課或回家之前，繞過來散散步，噴水池是大家相約的地標，也是情侶約會、求婚的聖地；在新竹人的記憶裡，陪伴大家走過八十多年的幸福時光。',
+            img: './images/attractions/01-14.png'
+        },
+        {
+            h2: '黃魚鴞的家',
+            h3: '恣意飛翔的大耳朵',
+            p: '二十多年前，新竹動物園曾經收容一隻因誤撞火車站玻璃而受傷的黃魚鴞，取名為「大耳朵」，這個半圓形鳥籠就是牠在園區居住的地方。喜歡在野外恣意飛翔的大耳朵，常常會飛到籠舍內大象雕像的象牙上停泊；雖然大耳朵在這裡的生活，獲得園方妥善的照顧，但是對於愛好飛翔的黃魚鴞來說，被關在小小籠舍裡，等於是限制了牠想飛的自由。黃魚鴞的半圓形鳥籠是園區從日治時期，就保留下來的歷史建物。這次藉由新竹動物園再生計畫，給動物朋友們一個快樂生活的新家，以黃魚鴞的家為契機，決定將鳥籠拆除。',
+            img: './images/attractions/01-10.png'
+        },
+        {
+            h2: '古樸盎然',
+            h3: '石燈',
+            p: '位在河馬池前的石燈，是日治時期遺留至今的古董，名列新竹市文化局的文化資產。這些石燈來自於新竹神社，在二次世界大戰中，所幸未被戰火波及，戰後從新竹神社移到新竹市立動物園內放置，也因為動物園從未遷址的關係，讓石燈得以在園內完整保存下來。',
+            img: './images/attractions/01-18.png'
+        },
+        {
+            h2: '琳琅滿目有亮點',
+            h3: '動物園紀念品店',
+            p: '新竹市立動物園有一處超夯的熱門景點就是紀念品店，這裡每個角落都超吸睛；其中最受遊客青睞的三大拍照打卡點，分別是入口處設置紅毛猩猩、山羌、大紅鶴等動物霓虹圖樣的綠茵牆；還有一面互動式打卡牆，不定期會更換插畫家的動物圖樣畫作，讓小朋友透過拍照留下與動物們的可愛互動；另一處是日本人氣公仔Sonny angel的特展實體店，吸引大小朋友爭相搶拍打卡。',
+            img: './images/attractions/01-1.png'
+        }
+    ]
+
+    function setPost(id) {
+        document.getElementById(`img`).src = ``
+    }
+
+    let indexPost = 0 //顯示第一個初始化
+
+    //上下鍵 切換
+
+    function changePost(event) {
+
+        console.log(event);
+        if (event === 'next') {
+            if (indexPost < textArray.length - 1) {
+                // Jeff:需要判斷他現在已經到最後一個要換的文字了，否則數字不能再上去，所以要抓 textArray 的長度，indexPost 從 0 開始，所以要再 - 1
+                indexPost++
+            }
+        } else {
+            if (indexPost > 0) {
+                // Jeff:需要判斷如果他已經在第一個了，不要再繼續扣下去
+                indexPost--
+            }
+        }
+        changeText(indexPost) // Jeff:換一篇的時候再執行一次更換文字與圖片的 function
+
+    }
+
+    function changeText(index) {
+        if (textArray[indexPost].h3) { // Jeff:因為有時候有 h3，有時候沒有，需要先判斷是否有 h3，不然會出錯
+            document.getElementById('h3').innerHTML = textArray[indexPost].h3
+        }
+        document.getElementById('h2').innerHTML = textArray[indexPost].h2 // Jeff:取出陣列第 index 個的 h2 的文字，放到 html 上的 h2
+        document.getElementById('p').innerHTML = textArray[indexPost].p // Jeff:取出陣列第 index 個的 p 的文字，放到 html 上的 p
+        document.getElementById('img').src = textArray[indexPost].img // Jeff:取出陣列第 index 個的 img 的路徑，放到 html 上的 img 的 src
+    }
+
+    changeText(indexPost) // Jeff:一開始就執行一次 更換文字與圖片的 function ，就會讓文字圖片都是跟陣列同步，
+
 
 
 </script>

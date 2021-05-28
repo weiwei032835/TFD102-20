@@ -157,7 +157,7 @@ div.top_text > p{
 
 .under{
     width: 785px;
-    height: 630px;
+    height: 600px;
     border-radius: 15px;
     border: 4px solid #3DBFAC;
     background-color: rgb(255, 255, 255);
@@ -186,26 +186,48 @@ div.top_text > p{
     width: 80px;
     height: 30%;
     margin: 15px;
-    
+    cursor:pointer;
 }
 .traffic_icon{
     /* width: 600px;
     display: flex; */
     margin: -15px auto;
     margin-left: 58px;
+    
+}
+.traffic_icon button{
+    outline: none;
+    background: transparent;
+    border: 0;
+    padding:0;
 }
 
 /* traffic_map */
 
 .traffic_map{
     width: 700px;
-    height: 380px;
+    height: 345px;
     /* border: 1px solid red; */
     margin: 0 auto;
     margin-top: 20px;
     border-radius:15px;
     background-image: url(../images/traffic_icon/bigcar.jpg);
-    background-size:116%;
+    background-size:114%;
+    background-repeat:no-repeat;
+}
+/* traffic_map  圖片切換*/
+.traffic_icon button.-active .not-active-icon {
+    display: none;
+}
+.traffic_icon button.-active .active-icon{
+    display: block;
+}
+
+.traffic_icon button .not-active-icon {
+    display: block;
+}
+.traffic_icon button .active-icon{
+    display: none;
 }
 
 

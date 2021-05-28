@@ -40,7 +40,8 @@
 
                 <div class="icon">
                     <li><a href="#" target="_blank"><img src="./images/banner/h-icon-1.svg" alt="會員登錄"></a></li>
-                    <li><a href="#" target="_blank"><img src="./images/banner/h-icon-2.svg" alt="連結到fb" class="fb"></a>
+                    <li><a href="#" target="_blank"><img src="./images/banner/h-icon-2.svg" alt="連結到fb"
+                                class="fb"></a>
                     </li>
                 </div>
             </ul>
@@ -95,59 +96,33 @@
                     </ul>
                     <!-- 按鈕 -->
                     <div class="all">
-                        <a href="#">
-                            <div class="butten">購票去
-                        </a>
+                        <a href="#"><div class="butten">購票去</a></div>
+                        <a href="#"><div class="butten">購票須知</a></div>
                     </div>
-                    <a href="#">
-                        <div class="butten">購票須知
-                    </a>
                 </div>
-            </div>
-            </div>
 
             </div>
             <!-- 交通資訊 -->
 
             <div class="under">
-
                 <h2><img src="./images/decoration/icon_grass4.svg">交通資訊<img src="./images/decoration/icon_grass4.svg">
                 </h2>
 
                 <div class="traffic_icon">
-
-
-                    <button data-index="0" class="-active">
-                        <img src="./images/traffic_icon/big_car_B.png" id="traffic_1" class="not-active-icon">
-                        <img src="./images/traffic_icon/big_car_A.png" class="active-icon" alt="">
-                    </button>
-                    <button data-index="1">
-                        <img src="./images/traffic_icon/bike_B.png" id="traffic_2" class="not-active-icon">
-                        <img src="./images/traffic_icon/bike_A.png" class="active-icon" alt="">
-                    </button>
-                    <button data-index="2">
-                        <img src="./images/traffic_icon/bus_B.png" id="traffic_3" class="not-active-icon">
-                        <img src="./images/traffic_icon/bus_A.png" class="active-icon" alt="">
-                    </button>
-                    <button data-index="3">
-                        <img src="./images/traffic_icon/car_B.png" id="traffic_4" class="not-active-icon">
-                        <img src="./images/traffic_icon/car_A.png" class="active-icon" alt="">
-                    </button>
-                    <button data-index="4">
-                        <img src="./images/traffic_icon/ubike_B.png" id="traffic_5" class="not-active-icon">
-                        <img src="./images/traffic_icon/ubike_A.png" class="active-icon" alt="">
-                    </button>
-                    <button data-index="5">
-                        <img src="./images/traffic_icon/train_B.png" id="traffic_6" class="not-active-icon">
-                        <img src="./images/traffic_icon/train_A.png" class="active-icon" alt="">
-                    </button>
+                    <a onclick="myFunction(1)"><img src="./images/traffic_icon/big_car_A.png"></a>
+                    <img src="./images/traffic_icon/bike_B.png">
+                    <img src="./images/traffic_icon/bus_B.png">
+                    <img src="./images/traffic_icon/train_B.png">
+                    <img src="./images/traffic_icon/ubike_B.png">
+                    <img src="./images/traffic_icon/car_B.png" >
                 </div>
 
                 <div class="traffic_map"></div>
 
         </section>
 
-      
+        
+        <button class="traffic_car"><img src="./images/traffic_icon/big_car_A.png" alt=""></button>
 
 
     </main>
@@ -175,36 +150,30 @@
 
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
 
-<script>
-   
-    
-    // 圖片切換照順序
-    var imgArray = [ 
-      "./images/traffic_icon/bigcar.jpg",
-      "./images/traffic_icon/bike.jpg",
-      "./images/traffic_icon/xx.png",
-      "./images/traffic_icon/car.jpg",
-      "./images/traffic_icon/youbike.jpg",
-      "./images/traffic_icon/train.jpg",
-    ]
+    function myFunction(){
+        document.getElementById("demo").innerHTML="Hello World";
+    }
 
 
-    var imgElement = document.querySelector('.traffic_map') // 先抓到要換圖的 div
 
-    $('.traffic_icon button').click(function() {
-        $('.traffic_icon button').removeClass('-active') // 先移除所有的 active
-        $(this).addClass('-active') // 當前增加 active class
-        const index = $(this).attr('data-index') // 看 button 身上的 data-index 數值是什麼
-        console.log(index);
-        imgElement.style.backgroundImage = `url('${imgArray[index]}')` 
-        // 對要換圖的 div，換上陣列排好順序的圖片， index 跟陣列有對上，就可以換上正確的圖
-        // $(".traffic_map").css('background-image', `url(${imgArray[index]})`) // JQuery 這樣也可以
-        
-    })
 
-</script>
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
 
 </html>

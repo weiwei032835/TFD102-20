@@ -126,13 +126,12 @@ nav.main_nav > ul.nav_list >li{
     div.right_sidebar .float{
         display: none;
     }
+
+   
 }
 
 @media all and (min-width: 500px ) and (max-width: 767px){
-    main{
-        /* width: calc(100% - 20px); 
-        /* border: orange 1px solid; */
-    }
+    
     body{
         min-width: 500px;
         border: blue 2px solid;

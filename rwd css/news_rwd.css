@@ -3,10 +3,7 @@
 body{
     margin: 0;
 }
-/* 加了長頸鹿消失卷軸也沒消失XD */
-/* img{
-    max-width: 100%;
-} */
+
 nav{
     font-size: 1.1rem;
 }
@@ -80,6 +77,16 @@ nav.main_nav > ul.nav_list >li{
 
 @media all and (min-width: 992px ) and (max-width: 3000px){
 
+    .news_banner img {
+            margin: -25px 0px;
+    }
+
+    .search{
+        width: 1000px;
+        margin-left: 10%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 
 
 
@@ -91,21 +98,66 @@ nav.main_nav > ul.nav_list >li{
         margin: -11px -16px 0px 40px;
     }
 
+   .news_banner{
+        max-width: 750px;
+   }
+   .search{
+         margin-left: 95px;
+   }
+   
+   div.grid_container{
+        width: 750px;
+        height: 300px;
+   }
 
+   .news_photo {
+        max-height: 300px;
+        max-width: 400px;
+   }
+
+   .news_banner img{
+        margin: -9px -130px;
+   }
+   
+   h2 {
+        font-size: 1.2rem;
+   }
+
+   .grid_item2{
+        margin-left: -183px;
+   }
+
+   .news .wrap{
+       max-width: 70%;
+   }
+   .news .item{
+        margin: 0 10px;
+        background-color:rgb(255, 251, 246);
+        margin-top:20px;
+        height:280px;
+    }
+    
+    .news img{
+        width: 245px;
+        /* height: 320px; */
+    }
 }
 
 @media all and (min-width: 500px ) and (max-width: 767px){
-
+    .news_banner{
+        max-width: 600px;
+        margin-left: 500px;
+    }
 
 
 
 }
 
 @media all and (max-width:575px) {
-    
+    .news_banner{
+        max-width: 600px;
+        margin-left: 500px;
+    }
 }
 
-.h3 {
-    margin-top: 10px;
-    margin-left: 4px;
-}
+

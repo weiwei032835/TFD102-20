@@ -1,19 +1,19 @@
 main{
-    width: 1000px;
+    /* width: 1000px; */
     margin: 0 auto;
-    overflow:hidden;
+    border: blue 1px solid;
 }
 
 /* 搜尋欄 */
 
 .search{
+    margin: 0 auto;
     display: flex;
     height: 30px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     flex-direction: row;
     width:400px ;
-    /* justify-content: center; */
-    /* margin: 0 auto; */
+    margin-left: 60px;
     margin-top: 20px;
 }
 
@@ -68,7 +68,7 @@ div.right_sidebar .float{
 .news_banner img{
     border-radius: 50px;
     width: 1000px;
-    margin: -25px 0px;
+    margin: -25px -112px;
     
 }
 
@@ -266,7 +266,7 @@ ul.pagination li a.active {
 ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 
 
-ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
 
 
 /* 版頭換色文字效果 */
@@ -309,9 +309,7 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
         min-width: 960px;
     }
 
-    div.right_sidebar .float{
-        display: none;
-    }
+   
 
     .header_md{
         display: none;

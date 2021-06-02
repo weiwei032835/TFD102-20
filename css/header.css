@@ -5,11 +5,6 @@
    
 }
 
-main{
-    width: 1200px;
-    margin: 0 auto;
-    overflow:hidden;
-}
 
 header{
     
@@ -18,13 +13,14 @@ header{
     justify-content: center;
     /* border: 1px red solid; */
     background: #EAECF2;
+    background-size: cover;
 }
 
 body {
     min-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-    
+    overflow-x: hidden;
 }
 .nav{
     width: 1140px;

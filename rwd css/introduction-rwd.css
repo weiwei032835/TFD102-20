@@ -1,0 +1,396 @@
+/* 漢堡列css */
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+/* * {
+    outline: 1px solid red !important;
+} */
+
+
+nav{
+    font-size: 1.1rem;
+}
+
+@media (max-width: 767px){
+    button.btn_switch{
+        display: inline-block;
+    }
+    
+    nav.main_nav{
+    /* border: 1px solid red; */
+    background-color: rgba(201, 197, 197, 0.2);
+    border-radius: 10px 10px 30px 30px;
+}
+
+}
+
+@media (max-width: 767px){
+    nav.main_nav{
+        display: none; /*不會佔位不會消失*/
+    }
+}
+
+nav.main_nav > ul.nav_list{
+    /* border: 1px solid green; */
+    list-style: none;
+    margin: 0;
+    padding: 0;          
+}
+
+nav.main_nav a{
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+@media (max-width:767px){
+    nav.main_nav a{
+        width: 100%;
+        text-align: center;
+        padding: 7px 0; /*內距*/
+    }
+
+}
+
+nav.main_nav > ul.nav_list >li{
+    /* border: 1px solid black; */
+    display: inline-block;
+    
+}
+
+@media (max-width:767px){
+    nav.main_nav > ul.nav_list >li{
+        display: block;
+    }
+}
+
+@media (min-width:767px){
+    nav.main_nav > ul.nav_list >li{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+    nav.main_nav > ul.nav_list{
+        display: none;
+    }
+
+}
+
+/* rwd */
+@media all and (min-width: 992px ) and (max-width: 3000px){
+    div.header{
+        width: 500px;
+        height: 30px;
+        background-color: darkgrey;
+    }
+    .header nav > .icon{
+        display: none;
+    }
+
+    body{
+        min-width: 960px;
+    }
+    .header_md{
+        display: none;
+    }
+    .header_md img{
+        display: none;
+    }
+}
+
+
+@media all and (min-width: 768px ) and (max-width: 991px){
+
+    body{
+        min-width: 720px;
+        /* border: orange 1px solid; */
+    }
+    div.icon{
+        display: none;
+    }
+    .header_md{
+        display: none;
+    }
+    .header_md img{
+        display: none;
+    }
+
+    .nav li{
+        margin: -11px -16px 0px 40px;
+    }
+
+
+    div.right_sidebar .float{
+        display: none;
+    }
+}
+
+@media all and (min-width: 500px ) and (max-width: 767px){
+    main{
+        /* width: calc(100% - 20px); 
+        /* border: orange 1px solid; */
+    }
+    body{
+        min-width: 500px;
+        border: blue 2px solid;
+    }
+
+    button.hamburger {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+    header{
+        display: none;
+    }
+
+    div.right_sidebar .float{  
+       display: none;
+    }
+
+
+     /* 動物園現況 */
+    div.under{
+        width:534px;
+        margin-left: -215px;   
+    }
+
+    h5 {
+        margin-right: 21%;
+    }
+
+     /* 園區處長  */
+   
+    div.b{
+        display: none;
+    }
+
+    .a img{
+        width: 162px;
+        height: 270px;
+        /* margin-left: -450px; */
+    }
+
+    .director{
+            width: 400px;
+            height: 400px;
+            background-size: 100%;
+            margin:30px;
+            margin-left: 106px;
+            margin-top: -10px;
+    }
+     /* 簡介 */
+    div.top_out{
+        width:534px;
+        margin-left: 30px;
+        /* margin: 0px; */
+    }
+    .inin_{
+        margin-right:236px;
+    }
+    .top_text{
+        height: 161px;
+        font-weight: bold;
+        position: absolute;
+        width: 550px;
+        transition: .5s;
+        left: -135px;
+    }
+    .in_text > p{
+        left: 52%;
+    }
+   
+   
+    /* 白色遮色片 -2*/
+    div.inin_2{
+        width: 105%;
+    }
+    
+    div.inin_2{
+        height: 82%;
+        background-color:rgba(255,255,255,.8);
+        box-sizing:border-box;
+        z-index:2;
+        transition:.5s;
+        width: 200px;
+       
+    }
+    div.other_text > p{
+        height: 161px;
+        font-weight: bold;
+        position: absolute;
+        width: 468px;
+        transition:.5s;
+        top: 576px;
+        left: 70px;
+        opacity: 0;
+    }
+    
+    div.other_text{
+        margin: 0px 25px 0px 0px;
+    }
+
+    /* 動物園現況hover */
+
+    .h5{
+        margin-left: 30%;
+    }
+
+    .under:hover .other_1{
+        opacity: 1;
+    }
+    
+    .underccc-section:hover  .in_text2{
+        opacity: 0;
+        transition:.5s;
+    }
+    
+    .inin_2:hover{
+        width: 105%;
+    }
+    
+    .top-section:hover .inin_ {
+        background-color: rgba(255,255,255,.8);
+        width: 67%;
+    }
+    /* 滑過時底色白漢文字出現 */
+    .underccc-section:hover .inin_2{
+        width: 105%;
+    }
+    
+    footer{
+        color: #707780;
+        height:200px;
+        display:block;
+    }
+
+    div.prompt{
+        /* border: 1px solid orangered; */
+        font-size: 0.3rem;
+        width: 588px;
+        height:42px;
+        margin-left: 4%;
+    }
+    
+    .footer_logo{
+        margin-left:9%;
+        margin-top: 3%;
+    }
+    ul.right{
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left:160px;
+        margin-top: -119px;
+    }
+
+    .footer_logo {
+        width: 105px;
+    }
+    
+}
+
+@media all and (max-width:500px) {
+    /* 滑過時底色白漢文字出現 */
+    div.underccc-section:hover .inin_2{
+        width: 107%;
+        height:100%;
+    }
+    .div.top-section:hover .inin_ {
+        background-color: rgba(255,255,255,.8);
+        width:53%;
+    }
+    div.top_out{
+        width:438px;
+        margin-left: 30px;
+        /* margin: 0px; */
+    }
+    div.inin_2 {
+        background-color: rgba(255,255,255,.8);
+        box-sizing: border-box;
+        z-index: 2;
+        transition: .5s;
+        width: 200px;
+        height: 100%;
+    }
+    .a img {
+        width: 125px;
+        height: 332px;
+        margin-left: -460px;
+    }
+    div.other_text > p {
+        height: 161px;
+        font-weight: bold;
+        position: absolute;
+        width: 360px;
+        transition: .5s;
+        top: 592px;
+        left: 70px;
+        opacity: 0;
+    }
+
+    div.under{
+        margin-left: -307px;
+        background-size: cover;
+        width: 438px;
+    }
+    .director {
+        margin-left: 63px;
+        margin-top:22px;
+    }
+
+    h5 {
+        margin-right: 33%;
+    }
+     /* 白色遮色片 -1*/
+     .inin_{
+        margin-right:331px;
+    }
+    .top_text{
+        height: 161px;
+        font-weight: bold;
+        position: absolute;
+        width: 450px;
+        transition: .5s;
+        left: -130px;
+    }
+    .in_text > p{
+        left: 41%;
+    }
+    .div.top_out {
+        width: 435px;
+        
+    }
+
+    footer {
+        height:222px;
+    }
+
+    .footer_logo{
+        margin-left:9%;
+        margin-top: 3%;
+    }
+    ul.right{
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left:160px;
+        margin-top: -119px;
+    }
+
+    .footer_logo {
+        width: 103px;
+    }
+
+    div.prompt {
+        /* border: 1px solid orangered; */
+        font-size: 0.3rem;
+        width: 439px;
+        height: 70px;
+        margin-left: 5%;
+    }
+}

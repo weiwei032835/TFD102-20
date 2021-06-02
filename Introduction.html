@@ -12,14 +12,15 @@
     <link rel="stylesheet" href="./css/text.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/lntroduction.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./rwd css/introduction-rwd.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="./css/aos/css/aos.css">
-
 </head>
 
 <body>
     <header>
-        <div class="nav">
+        <div class="nav pc" >
             <ul>
                 <li><a href="./news.html" class="new_btn">新竹新鮮事<br>
                         <p>news</p>
@@ -46,9 +47,34 @@
                 </div>
             </ul>
         </div>
+      
     </header>
-    <!-------- 右邊浮動 -------->
+    
+    <div class="header_md">
 
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
+        
+    </div>
+
+    <nav class="main_nav md">
+        <ul class="nav_list">
+            <li><a href="./news.html"><h3>新竹新鮮事</h3></a></li>
+            <li><a href="./Introduction.html"><h3>動物園簡介</h3></a></li>
+            <li><a href="./animals.html"><h3>動物館</h3></a></li>
+            <li><a href="./Information.html"><h3>入園資訊</h3></a></li>
+        </ul>
+    </nav>
+    
+
+    
+
+
+    <!-------- 右邊浮動 -------->
     <div class="right_sidebar">
         <img src="./images/logo/Mask Group 12.png" alt="購票" class="float">
     </div>
@@ -147,11 +173,11 @@
                 <div class="a" data-aos="fade-right"><img src="./images/decoration/artboard – 20.svg"></div>
             </div>
         </section>
-
+        
         <!-- 底紋插圖 -->
         <div class="all">
             <div class="b" data-aos="zoom-in"><img src="./images/decoration/artboard – 21.svg"></div>
-            <div class="c"><img src="./images/decoration/artboard – 19.svg"></div>
+        
         </div>
 
         <div class="illustration"></div>
@@ -186,6 +212,25 @@
 <script src="./css/aos/js/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(function () {
+
+        // 點擊按鈕，選單縮放
+        $("button.hamburger").on("click", function () {
+            $("nav.main_nav").slideToggle();
+        });
+
+    });
+    $(function () {
+
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function () {
+            $(this).toggleClass("is-active");
+        });
+
+    });
 </script>
 
 </html>

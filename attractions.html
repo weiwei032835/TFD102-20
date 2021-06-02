@@ -106,17 +106,17 @@
 
             <div class="box">
                 <div class="place place1" data-index="0" class="-active"><div class="mask"><img src="./images/attractions/01-2.png"></div></div>
-                <div class="place place2" data-index="1"><img src="./images/attractions/3.png"></div>
-                <div class="place place3" data-index="2"><img src="./images/attractions/01-5.png"></div>
-                <div class="place place4" data-index="3"><img src="./images/attractions/01-9.png"></div>
-                <div class="place place5" data-index="4"><img src="./images/attractions/01-15.png"></div>
-                <div class="place place6" data-index="5"><img src="./images/attractions/01-19.png"></div>
-                <div class="place place7" data-index="6"><img src="./images/attractions/2.png"></div>
-                <div class="place place8" data-index="7"><img src="./images/attractions/01-3.png"></div>
-                <div class="place place9" data-index="8"><img src="./images/attractions/4.png"></div>
-                <div class="place place10" data-index="9"><img src="./images/attractions/5.png"></div>
-                <div class="place place11" data-index="10"><img src="./images/attractions/6.png"></div>
-                <div class="place place12" data-index="11"><img src="./images/attractions/7.png"></div>
+                <div class="place place2" data-index="1"><div class="mask"><img src="./images/attractions/3.png"></div></div>
+                <div class="place place3" data-index="2"><div class="mask"><img src="./images/attractions/01-5.png"></div></div>
+                <div class="place place4" data-index="3"><div class="mask"><img src="./images/attractions/01-9.png"></div></div>
+                <div class="place place5" data-index="4"><div class="mask"><img src="./images/attractions/01-15.png"></div></div>
+                <div class="place place6" data-index="5"><div class="mask"><img src="./images/attractions/01-19.png"></div></div>
+                <div class="place place7" data-index="6"><div class="mask"><img src="./images/attractions/2.png"></div></div>
+                <div class="place place8" data-index="7"><div class="mask"><img src="./images/attractions/01-3.png"></div></div>
+                <div class="place place9" data-index="8"><div class="mask"><img src="./images/attractions/4.png"></div></div>
+                <div class="place place10" data-index="9"><div class="mask"><img src="./images/attractions/5.png"></div></div>
+                <div class="place place11" data-index="10"><div class="mask"><img src="./images/attractions/6.png"></div></div>
+                <div class="place place12" data-index="11"><div class="mask"><img src="./images/attractions/7.png"></div></div>
             </div>
 
             <!-- 插圖 -->
@@ -177,14 +177,13 @@
     //     $('.box').removeClass('-active') // 先移除所有的 active
     //     $(this).addClass('-active') // 當前增加 active class
     //     const index = $(this).attr('data-index') // 看 button 身上的 data-index 數值是什麼
-    //     console.log(index);
     //     imgElement.style.backgroundImage = `url('${imgArray[index]}')`
 
     //     // 對要換圖的 div，換上陣列排好順序的圖片， index 跟陣列有對上，就可以換上正確的圖
     //     //$(".top_text").css('.place', `url(${imgArray[index]})`) // JQuery 這樣也可以
 
     // })
-    // let indexPost = 0 
+
 
 
 
@@ -218,7 +217,58 @@
             h3: '動物園紀念品店',
             p: '新竹市立動物園有一處超夯的熱門景點就是紀念品店，這裡每個角落都超吸睛；其中最受遊客青睞的三大拍照打卡點，分別是入口處設置紅毛猩猩、山羌、大紅鶴等動物霓虹圖樣的綠茵牆；還有一面互動式打卡牆，不定期會更換插畫家的動物圖樣畫作，讓小朋友透過拍照留下與動物們的可愛互動；另一處是日本人氣公仔Sonny angel的特展實體店，吸引大小朋友爭相搶拍打卡。',
             img: './images/attractions/01-1.png'
-        }
+        },
+
+        {
+            h2: '走進時光的大門',
+            h3: '大象門',
+            p: '這座大象門可是大有來頭，栩栩如生的大象和獅子雕像，雄偉地鑲嵌在大門上，一看就讓人有動物園的意象！ 民國38年，新竹公園更名為中山公園時，門口的大象跟獅子造型的雕像也同時落成。這座大象門是由日本設計師，參考德國漢堡的哈根貝克動物園大門而建造的。全部雕塑都是以純銅製作而成，展現當時的尊貴氣派，而牆體的雕花典雅又精緻，至今依舊保存得非常完整。',
+            img: './images/attractions/01-12.png'
+        },
+
+        {
+            h2: '為動物服務',
+            h3: '食物森林',
+            p: '「食物森林」意旨在都市中建造一個仿森林狀態的生態環境，兼顧生態多樣性、節能減碳、避免使用農藥以及照顧人類健康等目的，因此已成為國際都市綠化趨勢。新竹動物園的食物森林，是全台唯一為動物服務的食物森林，也是城市中的動物棲地示範，全區約310坪，種植大約80種、6千多棵植物，區域內都有動物可以吃的植物。',
+            img: './images/attractions/01-17.png'
+        },
+
+        {
+           
+            h2:'何國華紀念碑',
+            p: '民國46年，住在日本大阪的愛國華僑何國華先生，捐贈新竹動物園一隻來自日本北海道的月輪熊，這隻未滿一歲小熊，小名No.1，相當逗趣討喜，當時造成了全市的轟動，小朋友們喜歡到天天吵著要來看小熊，也因此鼓舞了當時的市長及市公所人員，遊說何國華先生繼續贈送動物；而慷慨的他，日後更大方贈送了鴛鴦、老虎、金錢豹、非洲獅、大象等許多珍貴的動物。',
+            img: './images/attractions/1-3.png'
+        },
+
+        {
+            h2: '樂樂的家',
+            h3: '河馬池',
+            p: '河馬樂樂一直是新竹動物園的動物明星，牠住著的河馬池之所以會設計為這樣的形狀，就是為了保護池中三棵珍貴的榕樹，這三棵榕樹可是比新竹動物園歷史還悠久呢！',
+            img: './images/attractions/01-8.png'
+        },
+
+
+        {
+            h2: '老鷹們的中途之家',
+            h3: '舊老鷹籠舍',
+            p: '位於柏之丘旁的大鐵籠， 是曾經動物園收容老鷹的籠舍，新竹動物園曾收容了許多民眾救傷、消防局送來的猛禽鳥類，經過獸醫師的治療，這些猛禽會暫時放置在老鷹籠舍。讓牠們在裡面休養、復原身體，待獸醫師評斷健康無礙後，經專業團隊協助，讓牠們回歸大自然。 動物園自休園起，進行以「動物再生計畫」主軸的改建工程，目的要使動物不再只是關在鐵籠之中，而是打造一個友善動物的生活環境。',
+            img: './images/attractions/01-16.png'
+        },
+
+
+        {
+            h2: '老鷹們的中途之家',
+            h3: '洗足池',
+            p: '在當年，逛動物園可是一件大事，人們都會盛裝打扮，穿上平時捨不得穿鞋子前來，因為在日治時期的台灣道路，通常沒有鋪柏油，常使人腳上沾滿泥沙，於是基於衛生考量，便興建可以洗腳的洗足池，讓遊客們可以一進園就先洗腳，或是在園區玩樂弄髒了，沖洗乾淨再回家，從這小小的洗足池，就能一窺人們的衛生習慣，還能體會那個年代，遊客們對動物園的重視。',
+            img: './images/attractions/01-7.png'
+        },
+
+        {
+            h2: '綾子的老房子',
+            h3: '故事屋',
+            p: '民國54年，何國華先生贈送新竹動物園一隻大象-綾子，這棟建築物就是綾子過去所居住的屋子，由於動物園面積較小，不適合提供給較大的動物居住，所以過去這裡曾改為夜行館，豢養絨鼠。而經過動物再生計畫，為了紀念綾子小姐，也為了告訴大家為什麼新竹動物園沒有大象，同時宣導生命教育的重要，把夜行館再次改建成故事屋，在這裡撥放動物影片、提供書屋及說故事空間。',
+            img: './images/attractions/01-11.png'
+        },
     ]
 
     function setPost(id) {
@@ -231,7 +281,6 @@
 
     function changePost(event) {
 
-        console.log(event);
         if (event === 'next') {
             if (indexPost < textArray.length - 1) {
                 // Jeff:需要判斷他現在已經到最後一個要換的文字了，否則數字不能再上去，所以要抓 textArray 的長度，indexPost 從 0 開始，所以要再 - 1
@@ -243,11 +292,11 @@
                 indexPost--
             }
         }
-        changeText(indexPost) // Jeff:換一篇的時候再執行一次更換文字與圖片的 function
+        changeText() // Jeff:換一篇的時候再執行一次更換文字與圖片的 function
 
     }
 
-    function changeText(index) {
+    function changeText() {
         if (textArray[indexPost].h3) { // Jeff:因為有時候有 h3，有時候沒有，需要先判斷是否有 h3，不然會出錯
             document.getElementById('h3').innerHTML = textArray[indexPost].h3
         }
@@ -257,6 +306,20 @@
     }
 
     changeText(indexPost) // Jeff:一開始就執行一次 更換文字與圖片的 function ，就會讓文字圖片都是跟陣列同步，
+
+    const allPlace = document.querySelectorAll('.place')
+
+    for (let index = 0; index < allPlace.length; index++) {
+        const element = allPlace[index];
+        element.addEventListener('click',function(e){
+            const index = element.getAttribute('data-index')
+            indexPost = index
+
+            changeText() //第248行的輸出
+
+        })
+        
+    }
 
 
 

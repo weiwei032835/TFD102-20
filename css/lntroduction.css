@@ -1,11 +1,12 @@
 .transform{
-
+   
     height: 120px;
     /* border: 1px solid red; */
     display: flex;
     align-items: flex-end;
     justify-content: center;
     margin-top: 15px;
+   
 }
 
 .item,.item1{
@@ -102,6 +103,7 @@ div.right_sidebar .float{
     /* border: 1px solid rgb(68, 0, 255); */
     background-image: url(../images/introduction/intro_1.jpg);
     background-size: 100%;
+    background-size: cover;
 }
 
 .under{
@@ -111,12 +113,12 @@ div.right_sidebar .float{
     /* border: 1px solid rgb(68, 0, 255); */
     background-image: url(../images/introduction/intro_2.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /* 簡介 */
 
 div.top_text > p{
-   
     text-align: center;
     padding: 5px 0;
     border-radius: 0px 15px 15px 0px;
@@ -147,13 +149,13 @@ div.other_text{
     height: 370px;
     transition:.5s;
     width: 200px;
-    
+    /* border: 1px solid red; */
 }
 
 .in_text > p{
     font-weight:700;
     opacity: 1;
-    left: 84%;
+    left: 79%;
     top:22%;
     font-weight: bold;
     position: absolute;
@@ -189,8 +191,6 @@ div.other_text{
 
 
 /* 現況 */
-
-
 
 div.other_text > p{
     height: 380px;
@@ -325,11 +325,6 @@ div.b{
     margin-top: -74px;
 }
 
-div.c{
-    margin-top: -120px;
-    position: relative;
-}
-
 /* 版頭換色文字效果 */
 
 .nav li .Int_btn  {
@@ -339,4 +334,21 @@ div.c{
 .nav li .Int_btn >p {
     color:#FF9B2F;
     /* border-bottom: 3px solid #FF9B2F; */
+}
+
+.main_nav :hover  {
+    color:#FF9B2F;
+}
+
+/* header 中型尺寸 */
+.header_md{
+    width: 100%;
+    height: 80px;
+    list-style:none;
+    background:#EAECF2;
+}
+
+.header_md img{
+    width: 180px;
+    margin-left: 30px;
 }

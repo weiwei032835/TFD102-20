@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/text.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/news_1.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./rwd css/news_rwd.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./rwd css/hamburger_rwd.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/aos/css/aos.css">
 </head>
@@ -19,7 +22,7 @@
 <body>
    
         <header>
-            <div class="nav">
+            <div class="nav pc">
                 <ul>
                     <li><a href="./news.html" class="new_btn">新竹新鮮事<br>
                             <p>news</p>
@@ -48,6 +51,26 @@
                 </ul>
             </div>
         </header>
+
+        <div class="header_md">
+
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
+            
+        </div>
+        
+        <nav class="main_nav md">
+            <ul class="nav_list">
+                <li><a href="./news_page.html"><h3>新竹新鮮事</h3></a></li>
+                <li><a href="./Introduction.html"><h3>動物園簡介</h3></a></li>
+                <li><a href="./animals.html"><h3>動物館</h3></a></li>
+                <li><a href="./Information.html"><h3>入園資訊</h3></a></li>
+            </ul>
+        </nav>
 
 <!-------- 右邊浮動 -------->
 
@@ -226,16 +249,24 @@
     <script>
         AOS.init();
     </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(function () {
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            }
+        // 點擊按鈕，選單縮放
+        $("button.hamburger").on("click", function () {
+            $("nav.main_nav").slideToggle();
         });
-        
-    </script>
+
+    });
+    $(function () {
+
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function () {
+            $(this).toggleClass("is-active");
+        });
+
+    });
+</script>
 
 </html>

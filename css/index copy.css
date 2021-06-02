@@ -340,19 +340,13 @@ div.star_list{
   }
 
   .gallery-grid figure:hover figcaption {
-
     bottom: 60px
   }
-
   .gallery-grid figcaption {
-
     transition: all .2s ease-in-out
   }
-
   .gallery-grid figure {
-
     box-shadow: inset 0 -40px 0 0 rgba(0, 0, 0, .1);
-
   }
 
 

@@ -101,7 +101,7 @@ div.grid_item1{
     margin: auto;
     margin-left: -20px;
     letter-spacing: 2px;
-    line-height: 35px;
+    
 }
 
 div.grid_item2 h4{
@@ -136,27 +136,27 @@ div.news h2{
     margin-right: 5px;
 }
 
-.news .wrap{
+.news .wrap {
     display: flex;
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     /* border: 1px solid red; */
     justify-content: center;
 }
 
-.news .item{
+.news .item ,.item_3{
     margin: 0 10px;
     background-color:rgb(255, 251, 246);
     margin-top:20px;
     height:340px;
 }
 
-.news img{
+.news img {
     width: 320px;
     /* height: 320px; */
 }
 
-.item h3{
+.item h3 , .item_3 h3{
     border-bottom:solid 2px #eccb0f;
     margin:4% auto;
     border-bottom-width:2px;
@@ -165,15 +165,26 @@ div.news h2{
     margin-top:0px;
 }
 
-.item > p{
+.item  > p{
     width: 90%;
     margin-left: 17px;
     display: initial;
 }
 
-.item p{
+.item_3  > p{
+    width: 90%;
+    margin-left: 17px;
+    display: initial;
+}
+
+.item p {
     line-height:303%;
 }
+
+.item_3 p{
+    line-height:303%;
+}
+
 /* butten */
 .butten{
     margin: 10px 0px;
@@ -309,7 +320,6 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
         min-width: 960px;
     }
 
-   
 
     .header_md{
         display: none;
@@ -341,10 +351,7 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 }
 
 @media all and (min-width: 500px ) and (max-width: 767px){
-    main{
-        /* width: calc(100% - 20px); */
-        /* border: orange 1px solid; */
-    }
+    
     body{
         min-width: 500px;
         border: blue 2px solid;

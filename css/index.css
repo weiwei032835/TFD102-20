@@ -1,10 +1,7 @@
-
-/* 版頭 */
-
 main{
-    width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    overflow:hidden;
+    
 }
 
 
@@ -12,9 +9,9 @@ body {
     min-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-    font-size: 0px;
+    height: 100%;
+    /* border: orangered 1px solid; */
 }
-
 
 /* 主內容 */
 
@@ -60,7 +57,7 @@ article.card div.banner > img{
     margin-left: 72px;
     z-index: 1;
 }
-/* 新聞 */
+
 
 /* 背景插圖 */
 
@@ -136,113 +133,111 @@ img{
 /* 按鈕 */
 
 .butten{ 
-  outline: none;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  height: 30px;
-  width: 100px;
-  opacity: 1;
-  background-color: #3DBFAC;
-  transition: all .3s 0s ease;
-}
-
-.butten:hover{
-  background-color: #0b6d5e;
- 
-}
-
-.butten {
-   margin: 0  auto;
-   margin-top: 20px;
-}
-
-.butten  a{
-    font-size: 0.9rem;
-    color: #fff;
-    text-decoration:none;
-}
-
-/* 動物之星 */
-.star {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    margin-top: 10px;
-}
-div.star_list{
-    /* border-bottom: solid 2px #eccb0f; */
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    width: 900px;
-    height: 200px;
-    
-}
-
-.star_list img{
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    overflow: hidden;
-    transition: transform 400ms ease-out;
-}
-
-.star_list img:hover {
-	transform: scale(1.15);
-    /* 外框出不來 */
-    border-style:2px solid #3DBFAC;
-}
-
-
-
-.bear ,.hippo,.orangutan,.raccoon,.tiger{
-    display: inline-grid;
-}
-
-.star h2{
-    padding:20px;
+    outline: none;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
-    font-size: 1.4rem;
-}
-
-.star h2 img{
-    width: 27px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#section .star{
-    width: 100%;
-    padding-left:15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    /* flex-direction:row* 由左至右*/
-}
-
-.star h3{
-    font-size: 1.2rm;
-    color: #3DBFAC;
-    margin: 0 auto;
-}
-
-
-
-.hover{
-    display:none;
-}
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 30px;
+    width: 100px;
+    opacity: 1;
+    background-color: #3DBFAC;
+    transition: all .3s 0s ease;
+  }
+  
+  .butten:hover{
+    background-color: #0b6d5e;
+   
+  }
+  
+  .butten {
+     margin: 0  auto;
+     margin-top: 20px;
+  }
+  
+  .butten  a{
+      font-size: 0.9rem;
+      color: #fff;
+      text-decoration:none;
+  }
+  
+  /* 動物之星 */
+  .star {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 300px;
+      margin-top: 10px;
+  }
+  div.star_list{
+      /* border-bottom: solid 2px #eccb0f; */
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+      width: 900px;
+      height: 200px;
+      
+  }
+  
+  .star_list img{
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      overflow: hidden;
+      transition: transform 400ms ease-out;
+  }
+  
+  .star_list img:hover {
+      transform: scale(1.15);
+  }
+  
+  
+  
+  .bear ,.hippo,.orangutan,.raccoon,.tiger{
+      display: inline-grid;
+  }
+  
+  .star h2{
+      padding:20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* position: relative; */
+      font-size: 1.4rem;
+  }
+  
+  .star h2 img{
+      width: 27px;
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+  
+  #section .star{
+      width: 100%;
+      padding-left:15px;
+      padding-right: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      /* flex-direction:row* 由左至右*/
+  }
+  
+  .star h3{
+      font-size: 1.2rm;
+      color: #3DBFAC;
+      margin: 0 auto;
+  }
+  
+  
+  
+  .hover{
+      display:none;
+  }
 /* 遊園叮嚀 */
 
 .outer_block{
@@ -509,4 +504,166 @@ div.prompt{
 .note p{
     line-height: 195%;
 }
+/* header */
+@media all and (min-width: 992px ) and (max-width: 3000px){
 
+    div.header{
+        width: 500px;
+        height: 30px;
+        background-color: darkgrey;
+    }
+    .header nav > .icon{
+        display: none;
+    }
+
+    body{
+        min-width: 960px;
+    }
+
+    .header_md{
+        display: none;
+    }
+    .header_md img{
+        display: none;
+    }
+
+}
+
+
+
+@media all and (min-width: 768px ) and (max-width: 991px){
+
+    body{
+        min-width: 720px;
+        /* border: orange 1px solid; */
+    }
+    div.icon{
+        display: none;
+    }
+    .header_md{
+        display: none;
+    }
+    .header_md img{
+        display: none;
+    }
+    .news_banner {
+        height: 355px;
+        max-width: 700px;
+    }
+
+    main{
+        max-width: 700px;
+    }
+
+    .img_news{
+        grid-template-columns: 344px auto;
+    }
+
+    .news_photo {
+        width: 392px;
+    }
+
+}
+
+@media all and (min-width: 500px ) and (max-width: 767px){
+    
+    body{
+        min-width: 500px;
+        /* border: blue 2px solid; */
+    }
+
+    .main{
+        max-width: 600px;
+    }
+
+    .news_banner {
+        height: 300px;
+        max-width: 600px;
+    }
+
+    .news_banner img{
+        margin: -185px -97px;
+    }
+
+    .img_news{
+        grid-template-columns: 300px auto;
+    }
+
+    .news_photo {
+        width: 380px;
+        margin-left: -40px;
+        height: 300px;
+    }
+    button.hamburger {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+    header{
+        display: none;
+    }
+
+    div.right_sidebar .float{  
+       display: none;
+    }
+
+    .footer_logo{
+        margin-left:9%;
+        margin-top: 3%;
+    }
+    ul.right{
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left:160px;
+        margin-top: -119px;
+    }
+
+    .footer_logo {
+        width: 105px;
+    }
+    .carousel{
+        display: none;
+    }
+  
+}
+
+@media all and (max-width:575px) {
+
+    .main{
+        max-width: 420px;
+    }
+
+    .news_banner {
+        height: 300px;
+        width: 450px;
+    }
+
+    .news_banner img{
+        margin: -185px -226px;
+    }
+
+    .img_news {
+        grid-template-columns: 200px auto;
+        height: 70%;
+    }
+
+    .img , .img_02{
+        height: 200px;
+    }
+
+    .img img{
+        
+        margin-left: -119px;
+    }
+
+    .carousel{
+        display: none;
+    }
+}
+
+h3 {
+    margin-top: 10px;
+    margin-left: 4px;
+}

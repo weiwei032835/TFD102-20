@@ -248,24 +248,24 @@
     <script>
         AOS.init();
     </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-    $(function () {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
 
-        // 點擊按鈕，選單縮放
-        $("button.hamburger").on("click", function () {
-            $("nav.main_nav").slideToggle();
+            // 點擊按鈕，選單縮放
+            $("button.hamburger").on("click", function () {
+                $("nav.main_nav").slideToggle();
+            });
+
         });
+        $(function () {
 
-    });
-    $(function () {
+            // hamburger icon 的切換
+            $("button.hamburger").on("click", function () {
+                $(this).toggleClass("is-active");
+            });
 
-        // hamburger icon 的切換
-        $("button.hamburger").on("click", function () {
-            $(this).toggleClass("is-active");
         });
-
-    });
-</script>
+    </script>
 
 </html>

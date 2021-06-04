@@ -12,143 +12,274 @@
     <link rel="stylesheet" href="./css/text.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/animals-1.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./rwd css/hamburger_rwd.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./js/animals.js" />
     <link rel="stylesheet" href="./css/aos/css/aos.css">
-
 </head>
-   
-    <body>
-        <header>
-            <div class="nav">
-                <ul>
-                    <li><a href="./news.html">新竹新鮮事<br>
-                            <p>news</p>
-                        </a></li>
 
-                    <li><a href="./Introduction.html" class="Int_btn">動物園簡介<br>
-                            <p>introduction</p>
-                        </a></li>
+<body>
 
-                    <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
+    <header>
+        <div class="nav pc">
+            <ul>
+                <li><a href="./news.html" class="new_btn">新竹新鮮事<br>
+                        <p>news</p>
+                    </a></li>
 
-                    <li><a href="./animals.html" class="animals_btn">動物館<br>
-                            <p>animals</p>
-                        </a></li>
+                <li><a href="./Introduction.html" class="Int_btn">動物園簡介<br>
+                        <p>introduction</p>
+                    </a></li>
 
-                    <li><a href="./Information.html" class="Inf_btn">入園資訊<br>
-                            <p>information</p>
-                        </a></li>
+                <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
 
-                    <div class="icon">
-                        <li><a href="#" target="_blank"><img src="./images/banner/h-icon-1.svg" alt="會員登錄"></a></li>
-                        <li><a href="#" target="_blank"><img src="./images/banner/h-icon-2.svg" alt="連結到fb"
-                                    class="fb"></a>
-                        </li>
-                    </div>
-                </ul>
+                <li><a href="./animals.html" class="animals_btn">動物館<br>
+                        <p>animals</p>
+                    </a></li>
+
+                <li><a href="./Information.html" class="Inf_btn">入園資訊<br>
+                        <p>information</p>
+                    </a></li>
+
+                <div class="icon">
+                    <li><a href="#" target="_blank"><img src="./images/banner/h-icon-1.svg" alt="會員登錄"></a></li>
+                    <li><a href="#" target="_blank"><img src="./images/banner/h-icon-2.svg" alt="連結到fb" class="fb"></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <div class="header_md">
+
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
+
+    </div>
+    <main>
+        <nav class="main_nav md">
+            <ul class="nav_list">
+                <li><a href="./news.html">
+                        <h3>新竹新鮮事</h3>
+                    </a></li>
+                <li><a href="./Introduction.html">
+                        <h3>動物園簡介</h3>
+                    </a></li>
+                <li><a href="./animals.html">
+                        <h3>動物館</h3>
+                    </a></li>
+                <li><a href="./Information.html">
+                        <h3>入園資訊</h3>
+                    </a></li>
+            </ul>
+        </nav>
+        <!-- 動物之星 -->
+        <section class="star">
+            <h2><img src="./images/decoration/icon_grass2.svg">動物之星<img src="./images/decoration/icon_grass2.svg"></h2>
+
+            <div class="star_list">
+                <div class="bear"><img src="./images/animal_mvp/bear/bear.png" alt="bear">
+                    <h3>馬來熊</h3>
+                </div>
+                <div class="hippo"><img src="./images/animal_mvp/hippo/hippo.png" alt="hippo">
+                    <h3>河馬</h3>
+                </div>
+                <div class="orangutan"><img src="./images/animal_mvp/orangutan/orangutan.png" alt="orangutan">
+                    <h3>紅毛猩猩</h3>
+                </div>
+                <div class="raccoon"><img src="./images/animal_mvp/raccoon/raccoon.png" alt="raccoon">
+                    <h3>北美浣熊</h3>
+                </div>
+                <div class="tiger"><img src="./images/animal_mvp/tiger/tiger.png" alt="tiger">
+                    <h3>孟加拉虎</h3>
+                </div>
             </div>
-        </header>
-        <div class="right_sidebar">
-            <img src="./images/logo/Mask Group 12.png" alt="購票" class="float">
+        </section>
+
+
+
+        <!-- 動物 -->
+
+        <div class="situation">
+            <h5> <img src="./images/decoration/icon_grass4.svg" class="grass4-1">動物情報
+                <img src="./images/decoration/icon_grass4.svg" class="grass4">
+            </h5>
         </div>
 
-        <main>
-
-            <!-- 動物之星 -->
-            <section class="star">
-                <h2><img src="./images/decoration/icon_grass2.svg">動物之星<img src="./images/decoration/icon_grass2.svg"></h2>
-
-                <div class="star_list">
-                    <div class="bear"><img src="./images/animal_mvp/bear/bear.png" alt="bear">
-                        <h3>馬來熊</h3>
-                    </div>
-                    <div class="hippo"><img src="./images/animal_mvp/hippo/hippo.png" alt="hippo">
-                        <h3>河馬</h3>
-                    </div>
-                    <div class="orangutan"><img src="./images/animal_mvp/orangutan/orangutan.png" alt="orangutan">
-                        <h3>紅毛猩猩</h3>
-                    </div>
-                    <div class="raccoon"><img src="./images/animal_mvp/raccoon/raccoon.png" alt="raccoon">
-                        <h3>北美浣熊</h3>
-                    </div>
-                    <div class="tiger"><img src="./images/animal_mvp/tiger/tiger.png" alt="tiger">
-                        <h3>孟加拉虎</h3>
-                    </div>
+        <div class="box">
+            <div class="grid-item grid-item1"><img src="./images/animal_all/2-1.jpg">
+                <div class="mask">
+                    <h2>天竺鼠</h2>
                 </div>
-            </section>
-
-
-
-            <!-- 動物 -->
-
-            <div class="situation" >
-                <h5> <img src="./images/decoration/icon_grass4.svg" class="grass4-1">動物情報
-                    <img src="./images/decoration/icon_grass4.svg" class="grass4">
-                </h5>
+            </div>
+            <div class="grid-item grid-item2"><img src="./images/animal_all/1.png">
+                <div class="mask_2">
+                    <h2>馬來猴</h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item3"><img src="./images/animal_all/8.png">
+                <div class="mask_2">
+                    <h2>黑肚綿羊</h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item4"><img src="./images/animal_all/11.png">
+                <div class="mask_2">
+                    <h2>大紅鶴</h2>
+                </div>
             </div>
 
-            <div class="box">
-                <div class="grid-item grid-item1"><img src="./images/animal_all/2-1.jpg"><div class="mask"><h2>天竺鼠</h2></div></div>
-                <div class="grid-item grid-item2"><img src="./images/animal_all/1.png"><div class="mask_2"><h2>馬來猴</h2></div></div>
-                <div class="grid-item grid-item3" ><img src="./images/animal_all/8.png"><div class="mask_2"><h2>黑肚綿羊</h2></div></div>
-                <div class="grid-item grid-item4"><img src="./images/animal_all/11.png"><div class="mask_2"><h2>大紅鶴</h2></div></div>
-                
-                <div class="grid-item grid-item5"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600" ><img src="./images/animal_all/19.png"><div class="mask_2"><h2>絨鼠</h2></div></div>
-                <div class="grid-item grid-item6"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"><img src="./images/animal_all/2-2.jpg"><div class="mask_3"><h2>伊蘭羚羊</h2></div></div>
-                <div class="grid-item grid-item7" class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"><img src="./images/animal_all/17.png"><div class="mask_2"><h2>長鼻浣熊</h2></div></div>
-                <div class="grid-item grid-item8"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"><img src="./images/animal_all/4.png"><div class="mask_2"><h2>灰長臂猿</h2></div></div>
-                <div class="grid-item grid-item9"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"><img src="./images/animal_all/9.png"><div class="mask_2"><h3>黑手長臂猿</h3></div></div>
-                <div class="grid-item grid-item10"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"><img src="./images/animal_all/2-3.jpg"><div class="mask_3"><h2>山羌</h2></div></div>
-                <div class="grid-item grid-item11"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"><img src="./images/animal_all/7.png"><div class="mask_2"><h2>羊駝</h2></div></div>
-                <div class="grid-item grid-item12"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"><img src="./images/animal_all/10.png"><div class="mask_2"><h2>鴕鳥</h2></div></div>
-                <div class="grid-item grid-item13"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"><img src="./images/animal_all/18.png"><div class="mask_2"><h2>家兔</h2></div></div>
-                <div class="grid-item grid-item14"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"><img src="./images/animal_all/13.png"><div class="mask_2"><h2>褐狐猴</h2></div></div>
-                <div class="grid-item grid-item15"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"><img src="./images/animal_all/15.png"><div class="mask_2"><h2>矮種馬</h2></div></div>
-                <div class="grid-item grid-item16"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="600"><img src="./images/animal_all/5.png"><div class="mask_2"><h2>鴕鳥 </h2></div></div>
-                <div class="grid-item grid-item17"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="900"><img src="./images/animal_all/3.png"><div class="mask_2"><h2>臺灣獼猴 </h2></div></div>
-                <div class="grid-item grid-item18"class="custom_block"data-aos="fade-up" data-aos-offset="100" data-aos-duration="900"><img src="./images/animal_all/6.png"><div class="mask_2"><h2>黇鹿</h2></div></div>
-
+            <div class="grid-item grid-item5" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/19.png">
+                <div class="mask_2">
+                    <h2>絨鼠</h2>
+                </div>
             </div>
-            
-
-            <div class="at" data-aos="fade-left"><img src="./images/decoration/artboard – 29.svg"></div>
-
-            <div class="illustration">
-                <div class="c"></div>
-                <div class="d"><img src="./images/decoration/artboard – 31.svg"></div>
-                <div class="b"></div>
+            <div class="grid-item grid-item6" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/2-2.jpg">
+                <div class="mask_3">
+                    <h2>伊蘭羚羊</h2>
+                </div>
             </div>
-            </section>
-        </main>
-
-        <!-------- 頁尾區 -------->
-
-        <footer>
-
-            <div class="footer_img">
-                <img src="./images/logo/logo_01.png" alt="新竹動物園" class="footer_logo">
+            <div class="grid-item grid-item7" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/17.png">
+                <div class="mask_2">
+                    <h2>長鼻浣熊</h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item8" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/4.png">
+                <div class="mask_2">
+                    <h2>灰長臂猿</h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item9" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/9.png">
+                <div class="mask_2">
+                    <h3>黑手長臂猿</h3>
+                </div>
+            </div>
+            <div class="grid-item grid-item10" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/2-3.jpg">
+                <div class="mask_3">
+                    <h2>山羌</h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item11" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/7.png">
+                <div class="mask_2">
+                    <h2>羊駝</h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item12" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/10.png">
+                <div class="mask_2">
+                    <h2>鴕鳥</h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item13" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/18.png">
+                <div class="mask_2">
+                    <h2>家兔</h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item14" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/13.png">
+                <div class="mask_2">
+                    <h2>褐狐猴</h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item15" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/15.png">
+                <div class="mask_2">
+                    <h2>矮種馬</h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item16" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="600"><img src="./images/animal_all/5.png">
+                <div class="mask_2">
+                    <h2>鴕鳥 </h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item17" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="900"><img src="./images/animal_all/3.png">
+                <div class="mask_2">
+                    <h2>臺灣獼猴 </h2>
+                </div>
+            </div>
+            <div class="grid-item grid-item18" class="custom_block" data-aos="fade-up" data-aos-offset="100"
+                data-aos-duration="900"><img src="./images/animal_all/6.png">
+                <div class="mask_2">
+                    <h2>黇鹿</h2>
+                </div>
             </div>
 
-            <ul class="right">
-                <li><a>園區地址 | 300新竹市東區食品路66號</a></li>
-                <li><a>服務時間 | 除每週一及除夕外園區全年開放 早上 9:00 至下午 5:00</a></li>
-                <li><a>連續假期遇到週一則視同假日開園</a></li>
-                <li><a>聯絡信箱 | hc6800@ems.hccg.gov.tw </a></li>
-                <li><a>電話 | (03)522-2194　傳真 | (03)528-3007 </a></li>
-            </ul>
+        </div>
 
-            <div class="prompt">
-                本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
-                若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。
-            </div>
 
-        </footer>
-    </body>
-    <script src="./css/aos/js/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <div class="at" data-aos="fade-left"><img src="./images/decoration/artboard – 29.svg"></div>
 
-   
+        <div class="illustration">
+            <div class="c"></div>
+            <div class="d"><img src="./images/decoration/artboard – 31.svg"></div>
+            <div class="b"></div>
+        </div>
+        </section>
+    </main>
+
+
+    <!-------- 頁尾區 -------->
+    <footer>
+
+        <div class="footer_img">
+            <img src="./images/logo/logo_01.png" alt="新竹動物園" class="footer_logo">
+        </div>
+
+        <ul class="right">
+            <li><a>園區地址 | 300新竹市東區食品路66號</a></li>
+            <li><a>服務時間 | 除每週一及除夕外園區全年開放 早上 9:00 至下午 5:00</a></li>
+            <li><a>連續假期遇到週一則視同假日開園</a></li>
+            <li><a>聯絡信箱 | hc6800@ems.hccg.gov.tw </a></li>
+            <li><a>電話 | (03)522-2194　傳真 | (03)528-3007 </a></li>
+        </ul>
+
+        <div class="prompt">
+            本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
+            若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。
+        </div>
+
+    </footer>
+
+
+
+
+
+</body>
+<script src="./css/aos/js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(function () {
+
+        // 點擊按鈕，選單縮放
+        $("button.hamburger").on("click", function () {
+            $("nav.main_nav").slideToggle();
+        });
+
+    });
+    $(function () {
+
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function () {
+            $(this).toggleClass("is-active");
+        });
+
+    });
+</script>
+
 </html>

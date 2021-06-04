@@ -340,9 +340,15 @@ div.box div.grid-item10{
 
 h3{
     font-size: 1.2rm;
-    color: #3DBFAC;
     margin: 0 auto;
+    margin-top: 10px;
 }
+
+.star_list h3{
+    color: #3DBFAC;
+}
+
+
 
 .grass4{
     transform:rotate(40deg) ;
@@ -375,4 +381,87 @@ div.right_sidebar .float{
     position: fixed;
     right: 0px;/*右邊*/
     top:106px;
+}
+/* header */
+@media all and (min-width: 992px ) and (max-width: 3000px){
+    div.header{
+        width: 500px;
+        height: 30px;
+        background-color: darkgrey;
+    }
+    .header nav > .icon{
+        display: none;
+    }
+
+    body{
+        min-width: 960px;
+    }
+
+
+    .header_md{
+        display: none;
+    }
+    .header_md img{
+        display: none;
+    }
+
+}
+
+
+
+@media all and (min-width: 768px ) and (max-width: 991px){
+
+    body{
+        min-width: 720px;
+        /* border: orange 1px solid; */
+    }
+    div.icon{
+        display: none;
+    }
+    .header_md{
+        display: none;
+    }
+    .header_md img{
+        display: none;
+    }
+
+}
+
+@media all and (min-width: 500px ) and (max-width: 767px){
+    
+    body{
+        min-width: 500px;
+        /* border: blue 2px solid; */
+    }
+
+    button.hamburger {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+    header{
+        display: none;
+    }
+
+    div.right_sidebar .float{  
+       display: none;
+    }
+
+    .footer_logo{
+        margin-left:9%;
+        margin-top: 3%;
+    }
+    ul.right{
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left:160px;
+        margin-top: -119px;
+    }
+
+    .footer_logo {
+        width: 105px;
+    }
+    
 }

@@ -8,52 +8,74 @@
     <title>新竹動物園</title>
     <!-- 標題圖示 -->
     <link rel="icon" href="images/logo/zoo logo-02.svg">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/text.css">
-    <link rel="stylesheet" href="./css/index copy.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./js/index.js">
-    <link rel="stylesheet" href="./css/aos/css/aos.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./rwd css/hamburger_rwd.css">
+    <link rel="stylesheet" href="./rwd css/index_rwd.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    
+
 </head>
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 <body>
-    <header>
-        <div class="nav">
-            <ul>
-                <li><a href="./news.html" class="new_btn">新竹新鮮事<br>
-                        <p>news</p>
-                    </a></li>
+   
+        <header>
+            <div class="nav">
+                <ul>
+                    <li><a href="./news.html" class="new_btn">新竹新鮮事<br>
+                            <p>news</p>
+                        </a></li>
 
-                <li><a href="./Introduction.html" class="Int_btn">動物園簡介<br>
-                        <p>introduction</p>
-                    </a></li>
+                    <li><a href="./Introduction.html" class="Int_btn">動物園簡介<br>
+                            <p>introduction</p>
+                        </a></li>
 
-                <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
+                    <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
 
-                <li><a href="./animals.html" class="animals_btn">動物館<br>
-                        <p>animals</p>
-                    </a></li>
+                    <li><a href="./animals.html" class="animals_btn">動物館<br>
+                            <p>animals</p>
+                        </a></li>
 
-                <li><a href="./Information.html" class="Inf_btn">入園資訊<br>
-                        <p>information</p>
-                    </a></li>
+                    <li><a href="./Information.html" class="Inf_btn">入園資訊<br>
+                            <p>information</p>
+                        </a></li>
 
-                <div class="icon">
-                    <li><a href="#" target="_blank"><img src="./images/banner/h-icon-1.svg" alt="會員登錄"></a></li>
-                    <li><a href="#" target="_blank"><img src="./images/banner/h-icon-2.svg" alt="連結到fb" class="fb"></a>
-                    </li>
-                </div>
-            </ul>
-        </div>
-    </header>
+                    <div class="icon">
+                        <li><a href="#" target="_blank"><img src="./images/banner/h-icon-1.svg" alt="會員登錄"></a></li>
+                        <li><a href="#" target="_blank"><img src="./images/banner/h-icon-2.svg" alt="連結到fb"
+                                    class="fb"></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </header>
 
-        <!-- 背景圖 -->
-        <div class="place_img2"></div>
-        
+
     <main>
-        <!-- 換圖輪播 -->
-        <article class="card">
+        <div class="header_md">
+
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
+           
+        </div>
+        <nav class="main_nav md">
+            <ul class="nav_list">
+                <li><a href="./news.html"><h3>新竹新鮮事</h3></a></li>
+                <li><a href="./Introduction.html"><h3>動物園簡介</h3></a></li>
+                <li><a href="./animals.html"><h3>動物館</h3></a></li>
+                <li><a href="./Information.html"><h3>入園資訊</h3></a></li>
+            </ul>
+        </nav>
+         <!-- 換圖輪播 -->
+         <article class="card">
             <div class="banner">
                 <div class="swiper-container mySwiper">
                     <div class="swiper-wrapper">
@@ -251,35 +273,43 @@
         </div>
 
     </footer>
-
-
-
-
-
-
-
-
-
 </body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./css/aos/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+        
+    </script>
 
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="./css/aos/js/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
 
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-        }
-    });
+            // 點擊按鈕，選單縮放
+            $("button.hamburger").on("click", function () {
+                $("nav.main_nav").slideToggle();
+            });
+
+        });
+        $(function () {
+
+            // hamburger icon 的切換
+            $("button.hamburger").on("click", function () {
+                $(this).toggleClass("is-active");
+            });
+
+        });
+    </script>
     
-</script>
-
-
-
 </html>

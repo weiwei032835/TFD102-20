@@ -92,6 +92,11 @@ nav.main_nav > ul.nav_list >li{
         display: none;
     }
 
+    div.grid_item2{
+        padding: 60px 5px;
+    }
+
+
 }
 
 

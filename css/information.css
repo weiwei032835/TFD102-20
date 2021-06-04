@@ -24,6 +24,7 @@ li.Inf_btn a,li.Inf_btn p{
     margin-top: 10px;
 }
 
+/* 修改這裡 */
 h3{
     margin-top: 10px;
     margin-left:4px;
@@ -106,28 +107,6 @@ h5{
     font-weight:900;
 }
 
-/* 下面框 */
-
-.information{
-    /* border: 1px solid red; */
-    width: 800px;
-    height: 1134px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-.text{
-   display: flex;
-   justify-content: center;
-   flex-direction: initial;
-}
-
-.text img{
-    width: 32px;
-    height: 32px;
-    margin-right: 5px;
-}
-
 /* 購票資訊 */
 
 .top{
@@ -201,7 +180,6 @@ div.top_text > p{
     border: 0;
     padding:0;
 }
-
 /* traffic_map */
 
 .traffic_map{
@@ -266,3 +244,96 @@ div.right_sidebar .float{
 
 
 	
+
+
+/* 版頭換色文字效果 */
+
+
+
+/* header */
+@media all and (min-width: 992px ) and (max-width: 3000px){
+    div.header{
+        width: 500px;
+        height: 30px;
+        background-color: darkgrey;
+    }
+    .header nav > .icon{
+        display: none;
+    }
+
+    body{
+        min-width: 960px;
+    }
+
+
+    .header_md{
+        display: none;
+    }
+    .header_md img{
+        display: none;
+    }
+
+}
+
+
+
+@media all and (min-width: 768px ) and (max-width: 991px){
+
+    body{
+        min-width: 720px;
+        /* border: orange 1px solid; */
+    }
+    div.icon{
+        display: none;
+    }
+    .header_md{
+        display: none;
+    }
+    .header_md img{
+        display: none;
+    }
+
+}
+
+@media all and (min-width: 500px ) and (max-width: 767px){
+    
+    body{
+        min-width: 500px;
+        /* border: blue 2px solid; */
+    }
+
+    button.hamburger {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+    header{
+        display: none;
+    }
+
+    div.right_sidebar .float{  
+       display: none;
+    }
+
+    .footer_logo{
+        margin-left:9%;
+        margin-top: 3%;
+    }
+    ul.right{
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left:160px;
+        margin-top: -119px;
+    }
+
+    .footer_logo {
+        width: 105px;
+    }
+    
+}
+h3 {
+    margin-top: 10px;
+    margin-left: 4px;
+}

@@ -25,7 +25,7 @@ li.Inf_btn a,li.Inf_btn p{
 }
 
 /* 修改這裡 */
-h3{
+.ticket li h3{
     margin-top: 10px;
     margin-left:4px;
     font-size:1rem;
@@ -46,6 +46,7 @@ h5{
     font-size: 1.4rem;
     letter-spacing:.2rem;
     margin: 14px;
+    margin-left: 300px;
 }
 /* butten */
 .all{
@@ -86,6 +87,7 @@ h5{
     margin-top:-29px;
     list-style: none;
     border-bottom:solid 2px #eccb0f;
+    margin-top: -22px;
 }
 
 .remark{
@@ -116,6 +118,8 @@ h5{
     background-repeat: no-repeat;
     margin: 0 auto;
     background-size:800px;
+    padding: 3px;
+    margin-top: 24px;
 }
 
 div.top_text{
@@ -212,9 +216,8 @@ div.top_text > p{
 
 /* 頁尾 */
 
-.footer{
-    display: flex;
-    align-items: flex-end;
+footer {
+    margin-top: 40px;
 }
 
 /* 版頭換色文字效果 */

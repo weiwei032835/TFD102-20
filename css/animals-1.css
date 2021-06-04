@@ -465,3 +465,8 @@ div.right_sidebar .float{
     }
     
 }
+
+h3 {
+    letter-spacing: .1rem;
+    font-size: 1.1rem;
+}

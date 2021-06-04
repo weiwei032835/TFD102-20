@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./css/attractions.css">
+    <link href="./vendors/slick/css/slick.css" rel="stylesheet">
+    <link href="./vendors/slick/css/slick-theme.css" rel="stylesheet">
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        width: 800px;
+        height: 150px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-next:after, .swiper-button-prev:after{
+          color: #4CAF50;
+          font-size: large;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="box">
+        <div class="place place1" data-index="0" class="-active"><div class="mask"><img src="./images/attractions/01-2.png"></div></div>
+        <div class="place place2" data-index="1"><div class="mask"><img src="./images/attractions/3.png"></div></div>
+        <div class="place place3" data-index="2"><div class="mask"><img src="./images/attractions/01-5.png"></div></div>
+        <div class="place place4" data-index="3"><div class="mask"><img src="./images/attractions/01-9.png"></div></div>
+        <div class="place place5" data-index="4"><div class="mask"><img src="./images/attractions/01-15.png"></div></div>
+        <div class="place place6" data-index="5"><div class="mask"><img src="./images/attractions/01-19.png"></div></div>
+        <div class="place place7" data-index="6"><div class="mask"><img src="./images/attractions/2.png"></div></div>
+        <div class="place place8" data-index="7"><div class="mask"><img src="./images/attractions/01-3.png"></div></div>
+        <div class="place place9" data-index="8"><div class="mask"><img src="./images/attractions/4.png"></div></div>
+        <div class="place place10" data-index="9"><div class="mask"><img src="./images/attractions/5.png"></div></div>
+        <div class="place place11" data-index="10"><div class="mask"><img src="./images/attractions/6.png"></div></div>
+        <div class="place place12" data-index="11"><div class="mask"><img src="./images/attractions/7.png"></div></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- carousel -->
+  <script>
+    $('.instagram').slick({
+      // lazyLoad: 'ondemand',
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: true,
+      speed: 300,
+      dots: false,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 767, // RWD在767寬度時切換顯示數量
+          settings: {
+            slidesToShow: 3, //一次顯示2個
+            slidesToScroll: 1,//切換下一頁時移動1個
+          }
+        }
+        , {
+          breakpoint: 575,// RWD在575寬度時切換顯示數量
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        }
+        , {
+          breakpoint: 400,// RWD在400寬度時切換顯示數量
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }]
+    });
+  </script>
+  </body>
+</html>

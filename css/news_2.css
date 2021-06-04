@@ -252,7 +252,7 @@ div.header ul li .news_1btn {
     
     body{
         min-width: 500px;
-        border: blue 2px solid;
+        /* border: blue 2px solid; */
     }
 
     .main{

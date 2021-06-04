@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/text.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./rwd css/hamburger_rwd.css">
     <link rel="stylesheet" href="./css/attractions.css">
+    <link rel="stylesheet" href="./rwd css/attraction_rwd.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    
     
 
 </head>
@@ -46,13 +52,30 @@
             </ul>
         </div>
     </header>
+    <div class="header_md">
+
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
+       
+    </div>
     <div class="right_sidebar">
         <img src="./images/logo/Mask Group 12.png" alt="購票" class="float">
     </div>
 
 
     <main>
-
+        <nav class="main_nav md">
+            <ul class="nav_list">
+                <li><a href="./news.html"><h3>新竹新鮮事</h3></a></li>
+                <li><a href="./Introduction.html"><h3>動物園簡介</h3></a></li>
+                <li><a href="./animals.html"><h3>動物館</h3></a></li>
+                <li><a href="./Information.html"><h3>入園資訊</h3></a></li>
+            </ul>
+        </nav>
         <div class="transform">
             <div class="item1"> <a href="./Introduction.html"><img src="./images/introduction/intro.png" alt="">
                     <h3>園區簡介</h3>
@@ -158,6 +181,8 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"></script>
+
 <script type="text/javascript"></script>
 <script>
 
@@ -177,7 +202,7 @@
         {
             h2: '黃魚鴞的家',
             h3: '恣意飛翔的大耳朵',
-            p: '二十多年前，新竹動物園曾經收容一隻因誤撞火車站玻璃而受傷的黃魚鴞，取名為「大耳朵」，這個半圓形鳥籠就是牠在園區居住的地方。喜歡在野外恣意飛翔的大耳朵，常常會飛到籠舍內大象雕像的象牙上停泊；雖然大耳朵在這裡的生活，獲得園方妥善的照顧，但是對於愛好飛翔的黃魚鴞來說，被關在小小籠舍裡，等於是限制了牠想飛的自由。黃魚鴞的半圓形鳥籠是園區從日治時期，就保留下來的歷史建物。這次藉由新竹動物園再生計畫，給動物朋友們一個快樂生活的新家，以黃魚鴞的家為契機，決定將鳥籠拆除。',
+            p: '二十多年前，新竹動物園曾經收容一隻因誤撞火車站玻璃而受傷的黃魚鴞，取名為「大耳朵」，這個半圓形鳥籠就是牠在園區居住的地方。喜歡在野外恣意飛翔的大耳朵，常常會飛到籠舍內大象雕像的象牙上停泊；雖然大耳朵在這裡的生活，獲得園方妥善的照顧，但是對於愛好飛翔的黃魚鴞來說，被關在小小籠舍裡，等於是限制了牠想飛的自由。黃魚鴞的半圓形鳥籠是園區從日治時期，就保留下來的歷史建物。',
             img: './images/attractions/01-10.png'
         },
         {
@@ -298,9 +323,23 @@
 
 
 </script>
+<script>
+    $(function () {
 
+        // 點擊按鈕，選單縮放
+        $("button.hamburger").on("click", function () {
+            $("nav.main_nav").slideToggle();
+        });
 
+    });
+    $(function () {
 
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function () {
+            $(this).toggleClass("is-active");
+        });
 
+    });
+</script>
 
 </html>

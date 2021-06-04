@@ -103,11 +103,12 @@ h5{
     width: 800px;
     height: 400px;
     border-radius: 15px;
-    /* border: 1px solid rgb(68, 0, 255); */
+    /* border: 1px solid rgb(200, 255, 98); */
     background-color: #EAECF2;
     background-size: 100%;
     margin-top: 35px;
     display: flex;
+    margin: 0 auto;
 }
 
 div.top_text{
@@ -117,7 +118,7 @@ div.top_text{
 
 div.grid_item2 > p{
     
-    width:400px;
+    /* width:400px; */
     padding: 5px 0;
     font-size: 13px;
     font-weight: bold;
@@ -153,7 +154,7 @@ div.grid_item2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* border: 6px solid red; */
+    /* border: 3px solid red; */
     margin: 0 auto;
 }
 
@@ -162,13 +163,15 @@ div.grid_item2 {
     height: 150px;
     margin-bottom: 30px;
     cursor:pointer;
-    background-color:#18171787;
-   
+    /* background-color:#18171787;
+    */
 }
 
 .mask:hover{
     background-color:#3DBFAC;
     box-shadow: 5px 1px 1px #3DBFAC;
+    width: 150px;
+
 } 
 
 /* 頁尾 */
@@ -228,3 +231,90 @@ h2{
     color: #0FA36C;
 }
 
+/* header */
+@media all and (min-width: 992px ) and (max-width: 3000px){
+    div.header{
+        width: 500px;
+        height: 30px;
+        background-color: darkgrey;
+    }
+    .header nav > .icon{
+        display: none;
+    }
+
+    body{
+        min-width: 960px;
+    }
+
+
+    .header_md{
+        display: none;
+    }
+    .header_md img{
+        display: none;
+    }
+
+}
+
+
+
+@media all and (min-width: 768px ) and (max-width: 991px){
+
+    body{
+        min-width: 720px;
+        /* border: orange 1px solid; */
+    }
+    div.icon{
+        display: none;
+    }
+    .header_md{
+        display: none;
+    }
+    .header_md img{
+        display: none;
+    }
+
+}
+
+@media all and (min-width: 500px ) and (max-width: 767px){
+    
+    body{
+        min-width: 500px;
+        /* border: blue 2px solid; */
+    }
+
+    button.hamburger {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+    header{
+        display: none;
+    }
+
+    div.right_sidebar .float{  
+       display: none;
+    }
+
+    .footer_logo{
+        margin-left:9%;
+        margin-top: 3%;
+    }
+    ul.right{
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left:160px;
+        margin-top: -119px;
+    }
+
+    .footer_logo {
+        width: 105px;
+    }
+    
+}
+h3 {
+    margin-top: 10px;
+    margin-left: 4px;
+}

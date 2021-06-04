@@ -1,7 +1,7 @@
 main{
     /* width: 1000px; */
     margin: 0 auto;
-    border: blue 1px solid;
+    /* border: blue 1px solid; */
 }
 
 /* 搜尋欄 */
@@ -10,7 +10,7 @@ main{
     margin: 0 auto;
     display: flex;
     height: 30px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     flex-direction: row;
     width:400px ;
     margin-left: 60px;
@@ -354,7 +354,7 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
     
     body{
         min-width: 500px;
-        border: blue 2px solid;
+        /* border: blue 2px solid; */
     }
 
     button.hamburger {

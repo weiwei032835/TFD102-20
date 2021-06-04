@@ -131,7 +131,7 @@ nav{
     
     body{
         min-width: 500px;
-        border: blue 2px solid;
+        /* border: blue 2px solid; */
     }
 
     button.hamburger {

@@ -119,6 +119,9 @@ nav.main_nav > ul.nav_list >li{
     div.right_sidebar .float{
         display: none;
     }
+
+   
+    
 }
 
 @media all and (min-width: 500px ) and (max-width: 767px){

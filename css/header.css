@@ -60,6 +60,7 @@ div.nav ul{
     font-weight:550;
     text-decoration: none;
     margin: 2px;
+    
 } 
 
 header p{
@@ -81,12 +82,12 @@ header p{
    margin-left: 10px;
 }
 
-/* 特效 */
+/* 滑過 */
 
 .nav ul  > a:hover{
     color: #FF9B2F;
 }
-/* P出不來*/
+
 .nav li  > a:hover{
     color: #FF9B2F;
 }
@@ -94,3 +95,13 @@ header p{
 .nav li p > p:hover{
     color: #FF9B2F;
 }
+
+@media all and (min-width: 768px ) and (max-width: 991px){
+   
+   div.nav ul{
+        margin-left: -76px;
+    }
+}
+
+
+

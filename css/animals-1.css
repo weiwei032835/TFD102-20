@@ -481,7 +481,7 @@ div.right_sidebar .float{
         top: -101%;
     }
    
-    .grid-item18 {
+    /* .grid-item18 {
        display: none;
     }
 
@@ -491,7 +491,7 @@ div.right_sidebar .float{
 
      .grid-item16 {  
         display: none;
-     }
+     } */
 
      /*.mask_2*/
      .at{
@@ -608,17 +608,7 @@ div.right_sidebar .float{
         height: 150px;
     }
 
-    .grid-item18 {
-        display: none;
-     }
- 
-     .grid-item17 {
-         display: none;
-      }
- 
-      .grid-item16 {  
-         display: none;
-      }
+    
       /*.mask_2*/
       .grid-item1{
         width: 150px;

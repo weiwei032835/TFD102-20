@@ -488,7 +488,7 @@ div.right_sidebar .float{
         width: 400px;
     }
     .under{
-        width: 680px;
+        width: 522px;
         height: 535px;
     }
     .under h2 {
@@ -502,9 +502,11 @@ div.right_sidebar .float{
     } 
 
     .traffic_icon{
-        width: 625px;
+        width: 431px;
         margin: 0 auto;
         margin-top: 8px;
+        overflow-x: auto;
+        height: 133px;
     }
 
     .traffic_map{

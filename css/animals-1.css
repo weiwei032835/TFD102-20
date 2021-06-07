@@ -7,8 +7,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
-    margin-top: 10px;
+    
     /* border: 1px solid chocolate; */
 }
 div.star_list{
@@ -17,13 +16,13 @@ div.star_list{
     /* align-items: center; */
     width: 900px;
     height: 200px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .star_list img{
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    /* width: 150px;
+    height: 150px; */
     border-radius: 50%;
     object-fit: cover;
     overflow: hidden;
@@ -34,21 +33,15 @@ div.star_list{
 	transform: scale(1.15);
 }
 
-
-
-.bear ,.hippo,.orangutan,.raccoon,.tiger{
-    display: inline-grid;
-}
-
 .star h2{
-    padding:20px;
+    padding:10px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
     color: #0FA36C;
-    border: 1px orangered solid;
-    height: 10px;
+    margin-top: 15px;
+    /* border: 1px orangered solid; */
 }
 
 .star h2 img{
@@ -66,7 +59,20 @@ div.star_list{
     /* flex-direction:row* 由左至右*/
 }
 
-
+/* 輪播 */
+.owl-dots{
+    display: none;
+  }
+  .owl-carousel{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .owl-dots{
+    display: none !important;    
+  }
+  .owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
+    background:#3DBFAC !important;
+  }
 
 /* 動物園現況 */
 
@@ -74,7 +80,7 @@ div.star_list{
     align-items: center;
     display: flex;
     flex-direction: column;
-    border: 1px seagreen solid;
+    /* border: 1px seagreen solid; */
 }
 
 .situation img{
@@ -101,7 +107,7 @@ h5{
 
 
 .introduction{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 800px;
     height: 1000px;
     margin: 0 auto;
@@ -133,7 +139,7 @@ h5{
 .box{
     width: 872px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     gap:30px 30px;
     grid-template-columns: 150px 150px 150px 150px 150px;
@@ -352,6 +358,7 @@ h3{
 
 .star_list h3{
     color: #3DBFAC;
+    margin-left: 15%;
 }
 
 
@@ -419,7 +426,11 @@ div.right_sidebar .float{
 
 }
 
-
+@media all and (min-width: 992px ) and (max-width: 1197px){
+    .situation{
+        margin-top: 20px;
+    }
+}
 
 @media all and (min-width: 768px) and (max-width: 991px){
 
@@ -439,14 +450,10 @@ div.right_sidebar .float{
     .star{
         height: 260px;
     } 
-    div.star_list img{
-        width: 130px;
-        height: 130px;
-    }
-
+    
     div.star_list {
         width: 700px;
-        height: 300px;
+        
     }
 
     .box{
@@ -455,7 +462,7 @@ div.right_sidebar .float{
     .box {
         width: 700px;
         margin: 0 auto;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: grid;
         grid-template-columns: 150px 150px 150px 150px ;
         grid-template-areas:
@@ -512,7 +519,9 @@ div.right_sidebar .float{
          display: none;
      }
 
-
+     .situation{
+        margin-top: 20px;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 767px){
@@ -522,6 +531,9 @@ div.right_sidebar .float{
         /* border: blue 2px solid; */
     }
 
+    .situation{
+        margin-top: 58px;
+    }
     button.hamburger {
         display: flex;
         position: absolute;
@@ -554,24 +566,18 @@ div.right_sidebar .float{
     .star{
         height: 260px;
     } 
-    div.star_list img{
-        width: 130px;
-        height: 130px;
-    }
+    
    
     div.star_list{
         width: 600px;
         height: 148px;
     }
 
-    div.star_list img{
-        width: 100px;
-        height: 100px;
-    }
-
+    
     .box img{
         width: 130px;
         height: 130px;
+    
     }
     .box{
         display: none;
@@ -579,7 +585,7 @@ div.right_sidebar .float{
     .box {
         width: 611px;
         margin: 0 auto;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: grid;
         gap: 10px 20px;
         grid-template-columns: 120px 150px 120px 120px;
@@ -668,6 +674,11 @@ div.right_sidebar .float{
         display: none;
         }
 
+        .star_list h3{
+            margin-left:10%;
+        }
+
+        
 }
 
     h3 {
@@ -683,7 +694,7 @@ div.right_sidebar .float{
         height: 800px;
         width: 410px;
         margin: 0 auto;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: grid;
         gap: 1px 20px;
         grid-template-columns: 120px 120px 120px ;
@@ -729,4 +740,37 @@ div.right_sidebar .float{
         width: 400px;
         height: 148px;
     }
+    .situation{
+        margin-top: 20px;
+    }
 }
+
+/* 輪播圖 */
+.owl-dots {
+    display: none;
+  }
+
+  .owl-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .owl-dots {
+    display: none !important;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 80% !important;
+
+  }
+
+  .owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
+    background: #3DBFAC !important;
+  }
+
+  .owl-carousel .owl-stage{
+    margin-top: 10px;
+  }
+  .owl-carousel .owl-stage-outer{
+    margin-left: 12px;
+  }

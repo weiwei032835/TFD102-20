@@ -233,7 +233,8 @@ nav.main_nav > ul.nav_list >li{
 }
 @media all and (max-width:575px) {
     .news_banner{
-        max-width: 480px;
+        max-width: 450px;
+        margin-left: 15px;
     }
     div.grid_container {
         background-color: #eaecf2;

@@ -17,7 +17,7 @@ body {
 
 article.card{
     /* border: 1px  solid #d64a03; */
-    width: 800px;
+    width: 78%;
     height: 450px;
     /* height: 60%; */
     border-radius: 15px;
@@ -42,7 +42,7 @@ article.card div.banner > img{
 /* 圓形圈圈 */
 
 .round {
-    width: 1140px;
+    width: 100%;
     margin:  0 auto;
     /* border:1px solid royalblue; */
     display: flex;
@@ -62,14 +62,14 @@ article.card div.banner > img{
 /* 背景插圖 */
 
 div.place_img2 {
-    width: 180px;
+    width: 60px;
     /* border: 1px solid red; */
     height: 200px;
     background-image:url( "../images/decoration/artboard\ –\ 3-01.svg");
     background-repeat: no-repeat;
     display: block;
     position: absolute;
-    top: 1160px;
+    top: 1225px;
 }
 img{ 
     width: 100%;
@@ -91,7 +91,7 @@ img{
 
 .news .wrap{
     display: flex;
-    width: 1000px;
+    /* width: 1000px; */
     margin: 0 auto;
     /* border: 1px solid red; */
     justify-content: center;
@@ -128,8 +128,8 @@ img{
     display: initial;
 }
 
- div.color{
-        width: 400px;
+div.color{
+        width: 280px;
         height: 250px;
         background-color:#d6ff4157;
         position: absolute;
@@ -188,15 +188,12 @@ img{
       display: flex;
       justify-content: space-between;
       /* align-items: center; */
-      width: 900px;
-      height: 200px;
+     
       
   }
   
   .star_list img{
       display: inline-block;
-      /* width: 150px;
-      height: 150px; */
       border-radius: 50%;
       object-fit: cover;
       overflow: hidden;
@@ -208,10 +205,6 @@ img{
   }
   
   
-  
-  .bear ,.hippo,.orangutan,.raccoon,.tiger{
-      display: inline-grid;
-  }
   
   .star h2{
       margin-top: 6%;
@@ -228,14 +221,7 @@ img{
       margin-right: 5px;
   }
   
-  #section .star{
-      width: 100%;
-      padding-left:15px;
-      padding-right: 15px;
-      margin-right: auto;
-      margin-left: auto;
-      /* flex-direction:row* 由左至右*/
-  }
+  
   
   .star h3{
       font-size: 1.2rm;
@@ -545,7 +531,7 @@ div.prompt{
   }
 
   .owl-carousel .owl-stage{
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .owl-carousel .owl-stage-outer{
     margin-left: 12px;
@@ -627,7 +613,9 @@ div.prompt{
         height: 300px;
         max-width: 600px;
     }
-
+    .news{
+        margin-top: 22%;
+    }
     .news_banner img{
         margin: -185px -97px;
     }

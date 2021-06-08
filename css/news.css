@@ -148,7 +148,7 @@ div.news h2{
     margin: 0 10px;
     background-color:rgb(255, 251, 246);
     margin-top:20px;
-    height:340px;
+    width: 480px;
 }
 
 .news img {
@@ -185,6 +185,34 @@ div.news h2{
     line-height:303%;
 }
 
+/* 新聞滑過 */
+.news .item h3:hover {
+    color: #9ECE0C;
+  }
+  .news .item_3 h3:hover {
+    color: #9ECE0C;
+  }
+
+  div.color{
+    width: 320px;
+    height: 250px;
+    background-color:#d6ff4157;
+    position: absolute;
+    transition: box-shadow 1s;
+    cursor:pointer;
+    opacity:0;
+    }
+.color:hover{
+    opacity: 1;
+}
+.item {
+    position: relative;
+    overflow: hidden; 
+}
+.item h3{
+    position: relative;
+    overflow: hidden; 
+}
 /* butten */
 .butten{
     margin: 10px 0px;
@@ -347,6 +375,11 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
     .header_md img{
         display: none;
     }
+
+    .news .wrap {
+        max-width: 88%;
+    }
+
 
 }
 

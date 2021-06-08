@@ -678,7 +678,6 @@ div.right_sidebar .float{
             margin-left:10%;
         }
 
-        
 }
 
     h3 {
@@ -774,3 +773,75 @@ div.right_sidebar .float{
   .owl-carousel .owl-stage-outer{
     margin-left: 12px;
   }
+
+  @media all and (max-width:574px) {
+
+    ul.right {
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left: 160px;
+        margin-top: -119px;
+    }
+    .at {
+        display: none;
+    }
+    /* 頁尾*/
+
+        div.right_sidebar .float{  
+        display: none;
+        }
+    
+        .footer_logo{
+            margin-left:9%;
+            margin-top: 3%;
+        }
+
+        .footer_logo {
+            width: 105px;
+        }
+        
+    
+        div.prompt {
+            /* border: 1px solid orangered; */
+            font-size: 0.3rem;
+            width: 439px;
+            height: 70px;
+            margin-left: 5%;
+        }
+    
+
+        footer {
+            color: #707780;
+            height: 226px;
+            display: block;
+        }
+
+          /* 版頭消失 -手機版*/
+        div.nav ul {
+            display: none;
+        }
+        header{
+            display: none;
+        }
+        body{
+            min-width: 500px;
+            /* border: blue 2px solid; */
+        }
+
+        button.hamburger {
+            display: flex;
+            position: absolute;
+            right: 10px;
+            top: 14px;
+        }
+        header{
+            display: none;
+        }
+
+        div.right_sidebar .float{  
+        display: none;
+        }
+
+
+ }

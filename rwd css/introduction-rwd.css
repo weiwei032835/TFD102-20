@@ -127,7 +127,7 @@ nav{
    
 }
 
-@media all and (min-width: 500px ) and (max-width: 767px){
+@media all and (min-width: 575px ) and (max-width: 767px){
     
     body{
         min-width: 500px;
@@ -155,9 +155,6 @@ nav{
         margin-left: -215px;   
     }
 
-    h5 {
-        margin-right: 21%;
-    }
 
      /* 園區處長  */
    
@@ -290,7 +287,13 @@ nav{
     
 }
 
-@media all and (max-width:500px) {
+@media all and (max-width:574px) {
+
+    .h5{
+        margin-left: 150px;
+    }
+
+
     /* 滑過時底色白漢文字出現 */
     div.underccc-section:hover .inin_2{
         width: 107%;
@@ -362,26 +365,6 @@ nav{
         
     }
 
-    footer {
-        height:222px;
-    }
-
-    .footer_logo{
-        margin-left:9%;
-        margin-top: 3%;
-    }
-    ul.right{
-        list-style: none;
-        font-weight: bold;
-        padding: 10px;
-        margin-left:160px;
-        margin-top: -119px;
-    }
-
-    .footer_logo {
-        width: 103px;
-    }
-
     div.prompt {
         /* border: 1px solid orangered; */
         font-size: 0.3rem;
@@ -389,4 +372,78 @@ nav{
         height: 70px;
         margin-left: 5%;
     }
-}
+    /* 版頭消失 -手機版*/
+    div.nav ul {
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    body{
+        min-width: 500px;
+        /* border: blue 2px solid; */
+    }
+
+    button.hamburger {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+    header{
+        display: none;
+    }
+
+    div.right_sidebar .float{  
+       display: none;
+    }
+
+    
+ }   
+
+ @media all and (max-width:574px) {
+
+    ul.right {
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left: 160px;
+        margin-top: -119px;
+    }
+
+    /* 頁尾*/
+
+        div.right_sidebar .float{  
+        display: none;
+        }
+    
+        .footer_logo{
+            margin-left:9%;
+            margin-top: 3%;
+        }
+
+        .footer_logo {
+            width: 105px;
+        }
+        
+    
+        div.prompt {
+            /* border: 1px solid orangered; */
+            font-size: 0.3rem;
+            width: 439px;
+            height: 70px;
+            margin-left: 5%;
+        }
+    
+
+        footer {
+            color: #707780;
+            height: 226px;
+            display: block;
+        }
+
+
+
+
+
+ }

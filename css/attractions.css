@@ -318,3 +318,45 @@ h3 {
     margin-top: 10px;
     margin-left: 4px;
 }
+@media all and (max-width:574px) {
+
+    ul.right {
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left: 160px;
+        margin-top: -119px;
+    }
+
+    /* 頁尾*/
+
+        div.right_sidebar .float{  
+        display: none;
+        }
+    
+        .footer_logo{
+            margin-left:9%;
+            margin-top: 3%;
+        }
+
+        .footer_logo {
+            width: 105px;
+        }
+        
+    
+        div.prompt {
+            /* border: 1px solid orangered; */
+            font-size: 0.3rem;
+            width: 439px;
+            height: 70px;
+            margin-left: 5%;
+        }
+    
+
+        footer {
+            color: #707780;
+            height: 226px;
+            display: block;
+        }
+
+ }

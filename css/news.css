@@ -347,8 +347,6 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
     body{
         min-width: 960px;
     }
-
-
     .header_md{
         display: none;
     }

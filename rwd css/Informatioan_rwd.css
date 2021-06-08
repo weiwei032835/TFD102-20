@@ -73,33 +73,46 @@ nav.main_nav > ul.nav_list >li{
     }
 
 }
-/* rwd */
 
-@media all and (min-width: 992px ) and (max-width: 3000px){
+@media all and (max-width:574px) {
 
-    .news_banner img {
-            margin: -25px 0px;
+    ul.right {
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left: 160px;
+        margin-top: -119px;
     }
 
-    .search{
-        width: 1000px;
-        margin-left: 10%;
-        margin: 0 auto;
-        margin-top: 20px;
-    }
+    /* 頁尾*/
 
-    .grid_item2{
-        line-height: 35px;
-   }
+        div.right_sidebar .float{  
+        display: none;
+        }
+    
+        .footer_logo{
+            margin-left:9%;
+            margin-top: 3%;
+        }
 
-}
+        .footer_logo {
+            width: 105px;
+        }
+        
+    
+        div.prompt {
+            /* border: 1px solid orangered; */
+            font-size: 0.3rem;
+            width: 439px;
+            height: 70px;
+            margin-left: 5%;
+        }
+    
 
-@media all and (min-width: 768px ) and (max-width: 991px){
+        footer {
+            color: #707780;
+            height: 226px;
+            display: block;
+        }
 
-    .nav li{
-        margin: -11px -16px 0px 40px;
-    }
-
-  
-   
-}
+ }

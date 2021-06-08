@@ -162,8 +162,7 @@ div.right_sidebar .float{
 }
 
 .news_photo{
-    width: 570px;
-
+    width: 426px;
 }
 
 /* 版頭換色文字效果 */
@@ -248,7 +247,7 @@ div.header ul li .news_1btn {
 
 }
 
-@media all and (min-width: 500px ) and (max-width: 767px){
+@media all and (min-width: 575px ) and (max-width: 767px){
     
     body{
         min-width: 500px;
@@ -310,7 +309,7 @@ div.header ul li .news_1btn {
   
 }
 
-@media all and (max-width:575px) {
+@media all and (max-width:574px) {
 
     .main{
         max-width: 420px;
@@ -335,12 +334,74 @@ div.header ul li .news_1btn {
     }
 
     .img img{
-        
-        margin-left: -119px;
+        margin-left: -168px;
+    }
+
+    /* 版頭消失 -手機版*/
+    div.nav ul {
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    body{
+        min-width: 500px;
+        /* border: blue 2px solid; */
+    }
+
+    button.hamburger {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+    header{
+        display: none;
     }
 }
-
 h3 {
     margin-top: 10px;
     margin-left: 4px;
 }
+@media all and (max-width:574px) {
+
+    ul.right {
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left: 160px;
+        margin-top: -119px;
+    }
+
+    /* 頁尾*/
+
+        div.right_sidebar .float{  
+        display: none;
+        }
+    
+        .footer_logo{
+            margin-left:9%;
+            margin-top: 3%;
+        }
+
+        .footer_logo {
+            width: 105px;
+        }
+        
+    
+        div.prompt {
+            /* border: 1px solid orangered; */
+            font-size: 0.3rem;
+            width: 439px;
+            height: 70px;
+            margin-left: 5%;
+        }
+    
+
+        footer {
+            color: #707780;
+            height: 226px;
+            display: block;
+        }
+
+ }

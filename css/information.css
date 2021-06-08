@@ -390,7 +390,7 @@ div.right_sidebar .float{
     } 
 }
 
-@media all and (min-width: 500px) and (max-width: 767px){
+@media all and (min-width: 575px) and (max-width: 767px){
     
     body{
         min-width: 500px;
@@ -521,7 +521,7 @@ div.right_sidebar .float{
     } 
 
 }
-@media all and (max-width:500px){
+@media all and (max-width:574px){
 
     .top{
         border: 4px solid #3DBFAC;
@@ -531,9 +531,28 @@ div.right_sidebar .float{
         border-radius: 15px;
         margin-left: 13px;
         background-image:none;
-        height: 452px;
+        height: 468px;
+    }
+    h5 {
+        margin-left: 152px;
+        padding: 0px;
     }
 
+    .ticket{
+        width: 400px;
+        margin-top: -4px;
+        height: 180px;
+        margin: none;
+    }
+    
+    .ticket li h3{
+        font-size: 0.9rem;
+    }
+
+    .remark {
+        width: 420px;
+        margin-top: 4px;
+    }
     .grass_left{
         display: none;
     }
@@ -580,13 +599,51 @@ div.right_sidebar .float{
         margin-top: 30px;
     } 
 
-    .ticket{
-        width: 376px;
-    }
     
-    .ticket li h3{
-        font-size: 0.9rem;
+
+    /* 版頭消失 -手機版*/
+    div.nav ul {
+        display: none;
     }
+    header{
+        display: none;
+    }
+    body{
+        min-width: 500px;
+        /* border: blue 2px solid; */
+    }
+
+    button.hamburger {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+    }
+    header{
+        display: none;
+    }
+
+    div.right_sidebar .float{  
+       display: none;
+    }
+
+    .footer_logo{
+        margin-left:9%;
+        margin-top: 3%;
+    }
+    ul.right{
+        list-style: none;
+        font-weight: bold;
+        padding: 10px;
+        margin-left:160px;
+        margin-top: -119px;
+    }
+
+    .footer_logo {
+        width: 105px;
+    }
+
+    
 }
 h3 {
     margin-top: 10px;

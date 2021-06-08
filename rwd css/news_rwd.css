@@ -231,7 +231,7 @@ nav.main_nav > ul.nav_list >li{
         width: 284px;
     }
 }
-@media all and (max-width:575px) {
+@media all and (max-width:499px) {
     .news_banner{
         max-width: 450px;
         margin-left: 15px;

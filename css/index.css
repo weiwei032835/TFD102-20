@@ -287,6 +287,7 @@ img{
 .remind {
     width: 100%;
     background-color:#EAECF2 ;
+    margin-top: 4%;
 }
 
 /* 景點介紹*/ 
@@ -326,23 +327,20 @@ img{
   font-size: 2rem;
 }
 
- /* 滑過效果 */
+div.mask{
+    width: 400px;
+    height: 300px;
+    background-color:#18171787;
+    position: absolute;
+    transition: box-shadow 1s;
+    cursor:pointer;
+    opacity:0;
+    border-radius: 30px  90px 30px 30px;
+    }
 
- .radius_list:hover {
-
-    box-shadow: inset 0 -150px 0 0 rgba(0, 0, 0, .5);
-
-  }
-
-  .gallery-grid figure:hover figcaption {
-    bottom: 60px
-  }
-  .gallery-grid figcaption {
-    transition: all .2s ease-in-out
-  }
-  .gallery-grid figure {
-    box-shadow: inset 0 -40px 0 0 rgba(0, 0, 0, .1);
-  }
+.mask:hover{
+    opacity: 1;
+}
 
 
 .flex{
@@ -354,17 +352,27 @@ img{
     margin-top: 30px;
 }
 .radius_list{
-  
     display: flex;
     width: 400px;
     height: 300px;
-    /* border: 1px solid red; */
     border-radius: 30px  90px 30px 30px;
-    /* background-color: #3DBFAC; */
     box-shadow: -10px -6px 0px #3DBFAC ;
-    
 }
 
+.mask h2 {
+    transition:.3s;
+    position: absolute;
+    margin: 0;
+    color: white;
+    left: 34%;
+    bottom: 45%;
+    letter-spacing: .1rem;
+    opacity: 1;
+}
+
+.mask h2:hover{
+    color: rgb(255, 238, 0);
+}
 
 /* 圖片輪播 */
 .carousel_text {
@@ -373,7 +381,8 @@ img{
 }
 .carousel > img{
     width: 240px;
-    margin-right: 900px;  
+    margin-right: 900px;
+    margin-top: 15px;  
 }
 
 .marquee {
@@ -452,7 +461,7 @@ div.right_sidebar .float{
   }
 
 .swiper-pagination-bullet {
-    width: 16px;
+    /* width: 16px; */
     height: 8px;
     display: inline-block;
 }
@@ -504,6 +513,37 @@ div.prompt{
 .note p{
     line-height: 195%;
 }
+
+/* 動物之星輪播圖 */
+.owl-dots {
+    display: none;
+  }
+
+  .owl-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .owl-dots {
+    display: none !important;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 80% !important;
+
+  }
+
+  .owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
+    background: #3DBFAC !important;
+  }
+
+  .owl-carousel .owl-stage{
+    margin-top: 10px;
+  }
+  .owl-carousel .owl-stage-outer{
+    margin-left: 12px;
+  }
+
 /* header */
 @media all and (min-width: 992px ) and (max-width: 3000px){
 

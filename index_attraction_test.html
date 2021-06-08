@@ -14,8 +14,8 @@
                 column-gap: 40px;
                 margin-top: 30px;
             }
+
         .radius_list{
-        
             display: flex;
             width: 400px;
             height: 300px;
@@ -23,40 +23,70 @@
             border-radius: 30px  90px 30px 30px;
             /* background-color: #3DBFAC; */
             box-shadow: -10px -6px 0px #3DBFAC ;
-            
         }
 
-        .radius_list.figure.item1{
-            background: url(./images/attraction_index/02.png) no-repeat center;
-            background-size: cover
+
+        .radius_list img{
+            display: flex;
+            width: 400px;
+            height: 300px;
+            /* border: 1px solid red; */
+            border-radius: 30px  90px 30px 30px;
         }
 
-        div.figure.item2{
-            
-            background: url(./images/attraction_index/01.png) no-repeat center;
-            background-size: cover
+        div.mask{
+            width: 400px;
+            height: 300px;
+            background-color:#18171787;
+            position: absolute;
+            transition: box-shadow 1s;
+            cursor:pointer;
+            opacity:0;
+            border-radius: 30px  90px 30px 30px;
+            }
+
+        .mask:hover{
+            opacity: 1;
+        }
+        h2 {
+            transition:.3s;
+            position: absolute;
+            margin: 0;
+            color: white;
+            left: 34%;
+            bottom: 45%;
+            letter-spacing: .1rem;
+            opacity: 1;
+        }
+        .radius_list{
+            position: relative;
+            overflow: hidden; 
         }
 
+        h2:hover{
+            color: rgb(255, 238, 0);
+        }
     </style>
 </head>
 <body>
     <div class="flex">
-        <a href="#" class="radius_list">
-            <figure class="item1">
+        <div class="radius_list 1">
+            <a href="./Introduction.html">
+            <img src="./images/attraction_index/02.png">
+            <div class="mask">
+            <h2>園內好好逛</h2>
+            </a>
+            </div>
+        </div>
 
-                <figcaption>園內好好逛</figcaption>
-      
-              </figure>
-        </a>
-
-        <a href="#" class="radius_list">
-            <figure class="item2">
-
-                <figcaption>園外好好逛</figcaption>
-      
-              </figure>
-      
-        </a>
+        <div class="radius_list 2">
+            <a href="./Introduction.html">
+            <img src="./images/attraction_index/01.png">
+            <div class="mask">
+            <h2>園外好好玩</h2>
+            </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

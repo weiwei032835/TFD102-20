@@ -20,57 +20,65 @@
 </head>
 
 <body>
-    
-        <header>
-            <div class="nav pc">
-                <ul>
-                    <li><a href="./news.html" class="new_btn">新竹新鮮事<br>
-                            <p>news</p>
-                        </a></li>
 
-                    <li><a href="./Introduction.html" class="Int_btn">動物園簡介<br>
-                            <p>introduction</p>
-                        </a></li>
+    <header>
+        <div class="nav pc">
+            <ul>
+                <li><a href="./news.html" class="new_btn">新竹新鮮事<br>
+                        <p>news</p>
+                    </a></li>
 
-                    <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
+                <li><a href="./Introduction.html" class="Int_btn">動物園簡介<br>
+                        <p>introduction</p>
+                    </a></li>
 
-                    <li><a href="./animals.html" class="animals_btn">動物館<br>
-                            <p>animals</p>
-                        </a></li>
+                <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
 
-                    <li><a href="./Information.html" class="Inf_btn">入園資訊<br>
-                            <p>information</p>
-                        </a></li>
+                <li><a href="./animals.html" class="animals_btn">動物館<br>
+                        <p>animals</p>
+                    </a></li>
 
-                    <div class="icon">
-                        <li><a href="#"><img src="./images/banner/h-icon-1.svg" alt="會員登錄"></a></li>
-                        <li><a href="#" target="https://www.facebook.com/hsinchuzoo"><img src="./images/banner/h-icon-2.svg" alt="連結到fb"
-                                class="fb"></a>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-        </header>
+                <li><a href="./Information.html" class="Inf_btn">入園資訊<br>
+                        <p>information</p>
+                    </a></li>
 
-        <div class="header_md">
-
-            <button class="hamburger hamburger--collapse" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
+                <div class="icon">
+                    <li><a href="#"><img src="./images/banner/h-icon-1.svg" alt="會員登錄"></a></li>
+                    <li><a href="#" target="https://www.facebook.com/hsinchuzoo"><img src="./images/banner/h-icon-2.svg"
+                                alt="連結到fb" class="fb"></a>
+                    </li>
+                </div>
+            </ul>
         </div>
-    <main> 
+    </header>
+
+    <div class="header_md">
+
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <li><a href="./index.html"><img src="./images/logo/logo_02.png" class="header_logo"></a></li>
+    </div>
+    <main>
         <nav class="main_nav md">
             <ul class="nav_list">
-                <li><a href="./news.html"><h3>新竹新鮮事</h3></a></li>
-                <li><a href="./Introduction.html"><h3>動物園簡介</h3></a></li>
-                <li><a href="./animals.html"><h3>動物館</h3></a></li>
-                <li><a href="./Information.html"><h3>入園資訊</h3></a></li>
+                <li><a href="./news.html">
+                        <h3>新竹新鮮事</h3>
+                    </a></li>
+                <li><a href="./Introduction.html">
+                        <h3>動物園簡介</h3>
+                    </a></li>
+                <li><a href="./animals.html">
+                        <h3>動物館</h3>
+                    </a></li>
+                <li><a href="./Information.html">
+                        <h3>入園資訊</h3>
+                    </a></li>
             </ul>
         </nav>
-        
+
         <!-- 搜尋欄 -->
         <section class="information">
 
@@ -81,7 +89,7 @@
                             入園資訊<img src="./images/decoration/icon_grass4.svg" class="grass4"></h5>
                     </div>
 
-                    
+
 
                     <!-- 購票資訊 -->
                     <ul class="ticket">
@@ -119,19 +127,26 @@
                             <div class="butten">購票去
                         </a>
                     </div>
+                    <div class="overlay" style="border: 1px solid red;">
+                        <article>
+                            <h1>這是 Modal 裡的標題</h1>
+                            <p>這是 Modal 段落</p>
+                            <button type="button" class="btn_modal_close">x</button>
+                        </article>
+                    </div>
                     <a href="#">
                         <div class="butten">購票須知
                     </a>
-                    </div>
                 </div>
-                
             </div>
-                <div class="grass_left">
-                    <img src="./images/traffic_icon/01.png">
-                </div>
-                <div class="grass_right">
-                    <img src="./images/traffic_icon/02.png">
-                </div>
+
+            </div>
+            <div class="grass_left">
+                <img src="./images/traffic_icon/01.png">
+            </div>
+            <div class="grass_right">
+                <img src="./images/traffic_icon/02.png">
+            </div>
             </div>
             <!-- 交通資訊 -->
 
@@ -173,9 +188,9 @@
 
         </section>
 
-      
+
     </main>
-    
+
     <!-------- 頁尾區 -------->
     <footer>
 
@@ -203,58 +218,73 @@
 
 
 </body>
-    <script src="./css/aos/js/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-   
-    
-        // 圖片切換照順序
-        var imgArray = [ 
-          "./images/traffic_icon/bigcar.jpg",
-          "./images/traffic_icon/bike.jpg",
-          "./images/traffic_icon/xx.png",
-          "./images/traffic_icon/car.jpg",
-          "./images/traffic_icon/youbike.jpg",
-          "./images/traffic_icon/train.jpg",
-        ]
-    
-    
-        var imgElement = document.querySelector('.traffic_map') // 先抓到要換圖的 div
-    
-        $('.traffic_icon button').click(function() {
-            $('.traffic_icon button').removeClass('-active') // 先移除所有的 active
-            $(this).addClass('-active') // 當前增加 active class
-            const index = $(this).attr('data-index') // 看 button 身上的 data-index 數值是什麼
-            console.log(index);
-            imgElement.style.backgroundImage = `url('${imgArray[index]}')` 
-            // 對要換圖的 div，換上陣列排好順序的圖片， index 跟陣列有對上，就可以換上正確的圖
-            // $(".traffic_map").css('background-image', `url(${imgArray[index]})`) // JQuery 這樣也可以
-            
-        })
-    
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(function () {
-    
-            // 點擊按鈕，選單縮放
-            $("button.hamburger").on("click", function () {
-                $("nav.main_nav").slideToggle();
-            });
-    
+<script src="./css/aos/js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+
+    // 圖片切換照順序
+    var imgArray = [
+        "./images/traffic_icon/bigcar.jpg",
+        "./images/traffic_icon/bike.jpg",
+        "./images/traffic_icon/xx.png",
+        "./images/traffic_icon/car.jpg",
+        "./images/traffic_icon/youbike.jpg",
+        "./images/traffic_icon/train.jpg",
+    ]
+
+
+    var imgElement = document.querySelector('.traffic_map') // 先抓到要換圖的 div
+
+    $('.traffic_icon button').click(function () {
+        $('.traffic_icon button').removeClass('-active') // 先移除所有的 active
+        $(this).addClass('-active') // 當前增加 active class
+        const index = $(this).attr('data-index') // 看 button 身上的 data-index 數值是什麼
+        console.log(index);
+        imgElement.style.backgroundImage = `url('${imgArray[index]}')`
+        // 對要換圖的 div，換上陣列排好順序的圖片， index 跟陣列有對上，就可以換上正確的圖
+        // $(".traffic_map").css('background-image', `url(${imgArray[index]})`) // JQuery 這樣也可以
+
+    })
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(function () {
+
+        // 點擊按鈕，選單縮放
+        $("button.hamburger").on("click", function () {
+            $("nav.main_nav").slideToggle();
         });
-        $(function () {
-    
-            // hamburger icon 的切換
-            $("button.hamburger").on("click", function () {
-                $(this).toggleClass("is-active");
-            });
-    
+
+    });
+    $(function () {
+
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function () {
+            $(this).toggleClass("is-active");
         });
-    </script>
-    
+
+    });
+</script>
+<!-- 彈跳視窗 -->
+<!-- <script>
+    $(function () {
+
+        // 開啟 Modal 彈跳視窗
+        $("butten").on("click", function () {
+            $("div.overlay").fadeIn();
+        });
+
+        // 關閉 Modal
+        $("button.btn_modal_close").on("click", function () {
+            $("div.overlay").fadeOut();
+        });
+
+    });
+</script> -->
 
 </html>

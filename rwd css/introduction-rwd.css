@@ -292,11 +292,14 @@ nav{
     .h5{
         margin-left: 150px;
     }
-
+    
+    /* .inin_2:hover {
+        width: 160%;
+    } */
 
     /* 滑過時底色白漢文字出現 */
     div.underccc-section:hover .inin_2{
-        width: 107%;
+        width: 152%;
         height:100%;
     }
     .div.top-section:hover .inin_ {
@@ -441,9 +444,5 @@ nav{
             height: 226px;
             display: block;
         }
-
-
-
-
 
  }

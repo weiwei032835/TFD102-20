@@ -332,10 +332,10 @@ nav.main_nav > ul.nav_list >li{
         position: relative;
         overflow: hidden;
     }
-    .star h3{
-        margin-left:0px;
+    /* .star h3{
+        margin-left:24%;
     }
-    
+     */
     div.color{
         display: none;
     }
@@ -381,7 +381,7 @@ nav.main_nav > ul.nav_list >li{
         height: 184px;
     }
     div.mask{
-        width: 191px;
+        width: 178px;
         height: 184px;
     }
     .radius_list img{

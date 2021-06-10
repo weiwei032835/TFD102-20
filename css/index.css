@@ -1,12 +1,13 @@
+
 main{
-    max-width: 1000px;
+    /* max-width: 80%; */
     margin: 0 auto;
-    
+    border: orangered 1px solid;   
 }
 
 
 body {
-    min-width: 1200px;
+    min-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     height: 100%;
@@ -25,7 +26,6 @@ article.card{
     margin: 0 auto;
     margin-top:20px;
 }
-
 div.banner{
     font-size: 0;
     margin: 0 auto;
@@ -33,7 +33,7 @@ div.banner{
 }
 
 article.card div.banner > img{
-    max-width: 110%;
+    max-width: 100%;
     box-sizing: right 80px bottom 80px;
     position:absolute;
     top:-100px;
@@ -52,9 +52,9 @@ article.card div.banner > img{
 
 
 .round img{
-    /* border:1px solid violet; */
-    width: 16%;
-    margin-left: 72px;
+    border:1px solid violet;
+    width: 12%;
+    margin-left: 18%;
     z-index: 1;
 }
 
@@ -62,20 +62,22 @@ article.card div.banner > img{
 /* 背景插圖 */
 
 div.place_img2 {
-    width: 60px;
+    width: 18%;
     /* border: 1px solid red; */
     height: 200px;
     background-image:url( "../images/decoration/artboard\ –\ 3-01.svg");
     background-repeat: no-repeat;
     display: block;
     position: absolute;
-    top: 1225px;
+    top: 115%;
 }
 img{ 
     width: 100%;
     
 } 
-
+.news{
+    margin-top: 3%;
+}
 .news h2{
     display: flex;
     justify-content: center;
@@ -91,11 +93,12 @@ img{
 
 .news .wrap{
     display: flex;
-    /* width: 1000px; */
+    width: 80%;
     margin: 0 auto;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     justify-content: center;
-    height:330px;
+    height:350px;
+    margin-top: 2%;
 }
 
 .news .item{
@@ -129,7 +132,7 @@ img{
 }
 
 div.color{
-        width: 280px;
+        width: 307px;
         height: 250px;
         background-color:#d6ff4157;
         position: absolute;
@@ -207,7 +210,7 @@ div.color{
   
   
   .star h2{
-      margin-top: 6%;
+      margin-top: 3%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -260,8 +263,11 @@ div.color{
 .outer_block{
     justify-content: space-between;
     align-items: center;
-    height: 210px;
-    margin-left: 0px;
+    /* height: 210px;
+    margin-left: 0px; */
+    border: 1px  solid #d64a03;
+    width: 100%;
+    height: 200px;
 }
 .outer_block img{
     width:300px;
@@ -278,9 +284,11 @@ div.color{
   }
 
 .remind {
-    width: 100%;
+    width: 93%;
     background-color:#EAECF2 ;
     margin-top: 4%;
+    border: 1px  solid #d64a03;
+    margin: 0 auto;
 }
 
 /* 景點介紹*/ 
@@ -297,7 +305,7 @@ div.color{
     top:20px;
 }
 .attractions{
-    
+    border: brown 1px solid;
     /* justify-content: center; */
     padding: 15px;
     width: 900px;
@@ -367,7 +375,11 @@ div.mask{
     color: rgb(255, 238, 0);
 }
 
+
 /* 圖片輪播 */
+.carousel{
+    width: 80%;
+}
 .carousel_text {
     display: flex;
     margin: 0 auto;
@@ -380,7 +392,7 @@ div.mask{
 
 .marquee {
     height: 120px;
-    width: 1200px;
+    width: 95%;
     overflow: hidden;
     position: relative;
     float:left;
@@ -448,9 +460,13 @@ div.right_sidebar .float{
 
 .swiper-slide img {
     display: block;
-    width: 100%;
+    width: 60%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top:20px;
   }
 
 .swiper-pagination-bullet {
@@ -474,7 +490,7 @@ ul.right{
 footer{
     font-size: 0.5rem;
     color: #707780;
-    height: 160px;
+        height: 100%;
     background-color: #EAECF2;
     width: 100%;
     /* border: 1px solid chartreuse; */
@@ -484,7 +500,6 @@ footer{
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    
 
 }
 
@@ -493,6 +508,7 @@ div.prompt{
     font-size: 0.3rem;
     width: 390px;
     height: 12px;
+    height: 64%;
 }
 .swiper-container {
     width: 100%;
@@ -568,7 +584,7 @@ div.prompt{
 
     body{
         min-width: 720px;
-        /* border: orange 1px solid; */
+        border: orange 1px solid;
     }
     div.icon{
         display: none;
@@ -598,12 +614,9 @@ div.prompt{
 
 }
 
-@media all and (min-width: 500px ) and (max-width: 767px){
+@media all and (min-width: 575px ) and (max-width: 767px){
     
-    body{
-        min-width: 500px;
-        /* border: blue 2px solid; */
-    }
+   
 
     .main{
         max-width: 600px;
@@ -613,9 +626,7 @@ div.prompt{
         height: 300px;
         max-width: 600px;
     }
-    .news{
-        margin-top: 22%;
-    }
+    
     .news_banner img{
         margin: -185px -97px;
     }
@@ -651,8 +662,6 @@ div.prompt{
         list-style: none;
         font-weight: bold;
         padding: 10px;
-        margin-left:160px;
-        margin-top: -119px;
     }
 
     .footer_logo {
@@ -664,7 +673,7 @@ div.prompt{
   
 }
 
-@media all and (max-width:575px) {
+@media all and (max-width:574px) {
 
     .main{
         max-width: 420px;

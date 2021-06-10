@@ -46,7 +46,8 @@
 
                 <div class="icon">
                     <li><a href="#"><img src="./images/banner/h-icon-1.svg" alt="會員登錄"></a></li>
-                    <li><a href="#" target="https://www.facebook.com/hsinchuzoo"><img src="./images/banner/h-icon-2.svg" alt="連結到fb" class="fb"></a>
+                    <li><a href="#" target="https://www.facebook.com/hsinchuzoo"><img src="./images/banner/h-icon-2.svg"
+                                alt="連結到fb" class="fb"></a>
                     </li>
                 </div>
             </ul>
@@ -82,7 +83,7 @@
             </ul>
         </nav>
         <!-- 換圖輪播 -->
-        <article class="card">
+        <div class="card">
             <div class="banner">
                 <div class="swiper-container mySwiper">
                     <div class="swiper-wrapper">
@@ -92,8 +93,8 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-        </article>
-
+            </div>
+        </div>
         <div class="round">
             <img src="./images/banner/people_flow_1.png">
         </div>
@@ -106,13 +107,13 @@
                     <a href="#">
                         <div class="color"></div>
                         <img src="./images/news/ma.jpg" alt="">
-                            <p>2021-03-31
+                        <p>2021-03-31
                             <h4>新 聞</h4>
-                            </p>
-                            <h3>新竹市立動物園入園突破200萬人！</h3>
-                        </a>
+                        </p>
+                        <h3>新竹市立動物園入園突破200萬人！</h3>
+                    </a>
                 </div>
-               
+
                 <a href="#" class="item">
                     <div>
                         <div class="color"></div>
@@ -143,7 +144,7 @@
             <img src="./images/logo/Mask Group 12.png" alt="購票" class="float">
         </div>
 
-        <section class="star" data-aos="zoom-in-up" data-aos-duration="500">
+        <div class="star" data-aos="zoom-in-up" data-aos-duration="500">
             <h2><img src="./images/decoration/icon_grass2.svg">動物之星<img src="./images/decoration/icon_grass2.svg"></h2>
             <div class="star_list">
 
@@ -163,10 +164,10 @@
                     <h3>孟加拉虎</h3>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- 遊園禮貌小叮嚀 -->
 
-        <section class="remind">
+        <div class="remind">
 
             <ul>
                 <h2>遊園禮貌小叮嚀</h2>
@@ -203,38 +204,37 @@
                 </ul>
             </div>
             <hr>
-        </section>
-         <!-- 插圖 -->
-         <div class="place_img2"></div>
-        <!-- 景點介紹 -->
-        <div class="attractions">
-            <div class="text">
-                <h2><img src="./images/decoration/icon_grass4.svg">景點介紹</h2>
-            </div>
+        </div>
+        
+            <!-- 景點介紹 -->
+            <div class="attractions">
+                <div class="text">
+                    <h2><img src="./images/decoration/icon_grass4.svg">景點介紹</h2>
+                </div>
 
-            <div class="flex">
-                <div class="radius_list 1">
-                    <a href="./Introduction.html">
+                <div class="flex">
+                    <div class="radius_list 1">
+                        <a href="./Introduction.html">
                         <img src="./images/attraction_index/02.png">
                         <div class="mask">
-                            <h2>園內好好逛</h2>
-                    </a>
+                        <h2>園內好好逛</h2>
+                        </a>
+                        </div>
+                    </div>
+            
+                    <div class="radius_list 2">
+                        <a href="#">
+                        <img src="./images/attraction_index/01.png">
+                        <div class="mask">
+                        <h2>園外好好玩</h2>
+                        </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="radius_list 2">
-                <a href="./Introduction.html">
-                    <img src="./images/attraction_index/01.png">
-                    <div class="mask">
-                        <h2>園外好好玩</h2>
-                </a>
-            </div>
         </div>
-
-        </div>
-
         <!-- 圖片輪播 -->
-        <section class="carousel">
+        <div class="carousel">
 
             <img src="./images/logo/artboard – 5.svg" class="carousel_text" alt="新竹動物園">
 
@@ -253,27 +253,29 @@
                     <span><img src="./images/00000/11.png"></span>
                     <span><img src="./images/00000/12.png"></span>
                     <span><img src="./images/00000/13.png"></span>
-
-
                 </div>
             </div>
-        </section>
-        <!-------- 右邊浮動 -------->
-
-        <div class="right_sidebar">
-            <img src="./images/logo/Mask Group 12.png" alt="購票" class="float">
         </div>
+    
+    </main>
 
+    <!-------- 右邊浮動 -------->
 
-        <!-------- 頁尾區 -------->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css">
-        </link>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css">
-        </link>
-        <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+    <div class="right_sidebar">
+        <img src="./images/logo/Mask Group 12.png" alt="購票" class="float">
+    </div>
+
+    <!-- 插圖 -->
+    <div class="place_img2"></div>
+    <!-------- 頁尾區 -------->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css">
+    </link>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css">
+    </link>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
 
     </main>
 

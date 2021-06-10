@@ -582,7 +582,7 @@ div.prompt{
 
     body{
         min-width: 720px;
-        border: orange 1px solid;
+        /* border: orange 1px solid; */
     }
     div.icon{
         display: none;

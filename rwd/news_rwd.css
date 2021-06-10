@@ -152,13 +152,13 @@ nav.main_nav > ul.nav_list >li{
 
 @media all and (min-width: 575px ) and (max-width: 767px){
     .news_banner{
-        max-width: 600px;
+        max-width: 96%;
     }
 
     div.grid_container {
         background-color: #eaecf2;
         /* border: 1px solid red; */
-        width: 1000px;
+        max-width: 96%;
         height: 285px;
         margin: 0 auto;
         display: grid;
@@ -242,7 +242,6 @@ nav.main_nav > ul.nav_list >li{
 @media all and (max-width:574px) {
     .news_banner{
         max-width: 450px;
-        margin-left: 15px;
     }
     div.grid_container {
         background-color: #eaecf2;

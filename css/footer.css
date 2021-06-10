@@ -7,7 +7,7 @@ ul.right{
 footer{
     font-size: 0.5rem;
     color: #707780;
-    height: 160px;
+    height: 100%;
     background-color: #EAECF2;
     width: 100%;
     /* border: 1px solid chartreuse; */
@@ -24,7 +24,7 @@ div.prompt{
     /* border:1px solid orangered; */
     font-size: 0.3rem;
     width: 390px;
-    height: 12px;
+    /* height: 12px; */
 }
 .swiper-container {
     width: 100%;

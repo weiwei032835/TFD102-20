@@ -67,7 +67,7 @@ div.right_sidebar .float{
 .back_1{
     /* border:1px solid red; */
     /* height: 30px; */
-    width: 990px;
+    /* width: 990px; */
     margin-top:15px;
     list-style: none;
 }
@@ -162,7 +162,7 @@ div.right_sidebar .float{
 }
 
 .news_photo{
-    width: 520px;
+    width: 445px;
 }
 
 /* 版頭換色文字效果 */
@@ -297,9 +297,6 @@ div.header ul li .news_1btn {
     ul.right{
         list-style: none;
         font-weight: bold;
-        padding: 10px;
-        margin-left:160px;
-        margin-top: -119px;
     }
 
     .footer_logo {
@@ -334,7 +331,7 @@ div.header ul li .news_1btn {
     }
 
     .img img{
-        margin-left: -168px;
+        margin-left: -175px;
     }
 
     /* 版頭消失 -手機版*/

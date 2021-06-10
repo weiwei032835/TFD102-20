@@ -406,13 +406,14 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
         margin-left:9%;
         margin-top: 3%;
     }
-    ul.right{
+    
+    /* ul.right{
         list-style: none;
         font-weight: bold;
         padding: 10px;
         margin-left:160px;
         margin-top: -119px;
-    }
+    } */
 
     .footer_logo {
         width: 105px;

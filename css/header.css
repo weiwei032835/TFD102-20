@@ -8,7 +8,7 @@
 main{
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px rgb(7, 6, 97) solid;
+    /* border: 1px rgb(7, 6, 97) solid; */
 }
 
 header{
@@ -26,7 +26,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     overflow-x: hidden;
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 .nav{
     width: 1140px;

@@ -96,6 +96,9 @@ nav{
     .header_md img{
         display: none;
     }
+    .introduction{
+        width: 800px;
+    }
 }
 
 
@@ -119,12 +122,51 @@ nav{
         margin: -11px -16px 0px 40px;
     }
 
-
+    /* 簡介 */
     div.right_sidebar .float{
         display: none;
     }
 
+    .top-section{
+        /* border: 1px solid red; */
+        width: 752px;
+    }
+
+    /* 兩個方框 */
+
+        .introduction{
+            /* border: 1px solid red; */
+            width: 750px;
+            height: 1080px;
+            margin: 0 auto;
+            margin-top: 20px;
+            position:relative;
+            /* border: 2px solid green; */
+        }
+
+        .text{
+            display: flex;
+            /* border: blue 1px solid; */
+            width: 200px;
+        }
+
+        .text img{
+            width: 32px;
+            height: 32px;
+            margin-right: 5px;
+        }
    
+        .top_out{
+            width:750px;
+        }
+
+        .under{
+            width: 750px;
+        }
+
+        div.other_text {
+            width: 650px;
+        }
 }
 
 @media all and (min-width: 575px ) and (max-width: 767px){
@@ -152,7 +194,7 @@ nav{
      /* 動物園現況 */
     div.under{
         width:534px;
-        margin-left: -215px;   
+        background-size: 125%;
     }
 
 
@@ -174,7 +216,7 @@ nav{
             background-size: 100%;
             margin:30px;
             margin-left: 106px;
-            margin-top: -10px;
+            margin-top: 16px;
     }
      /* 簡介 */
     div.top_out{
@@ -182,9 +224,7 @@ nav{
         margin-left: 30px;
         /* margin: 0px; */
     }
-    .inin_{
-        margin-right:236px;
-    }
+  
     .top_text{
         height: 161px;
         font-weight: bold;
@@ -193,14 +233,13 @@ nav{
         transition: .5s;
         left: -135px;
     }
-    .in_text > p{
-        left: 52%;
+    
+    /* 修改部分 */
+    .introduction{
+        width: 400px;
     }
-   
-   
-    /* 白色遮色片 -2*/
-    div.inin_2{
-        width: 105%;
+    .top-section{
+        width: 498px;
     }
     
     div.inin_2{
@@ -210,7 +249,7 @@ nav{
         z-index:2;
         transition:.5s;
         width: 200px;
-       
+        height: 100%;
     }
     div.other_text > p{
         height: 161px;
@@ -218,7 +257,6 @@ nav{
         position: absolute;
         width: 468px;
         transition:.5s;
-        top: 576px;
         left: 70px;
         opacity: 0;
     }
@@ -246,9 +284,12 @@ nav{
         width: 105%;
     }
     
+    .top-section {
+        width: 566px;
+    }
     .top-section:hover .inin_ {
         background-color: rgba(255,255,255,.8);
-        width: 67%;
+        width: 90%;
     }
     /* 滑過時底色白漢文字出現 */
     .underccc-section:hover .inin_2{
@@ -266,7 +307,7 @@ nav{
         font-size: 0.3rem;
         width: 588px;
         height:42px;
-        margin-left: 4%;
+       
     }
     
     .footer_logo{
@@ -285,6 +326,11 @@ nav{
         width: 105px;
     }
     
+    .introduction{
+        width: 600px;
+        /* border: 1px solid red; */
+    }
+
 }
 
 @media all and (max-width:574px) {
@@ -293,10 +339,7 @@ nav{
         margin-left: 150px;
     }
     
-    /* .inin_2:hover {
-        width: 160%;
-    } */
-
+   
     /* 滑過時底色白漢文字出現 */
     div.underccc-section:hover .inin_2{
         width: 152%;
@@ -336,7 +379,7 @@ nav{
     }
 
     div.under{
-        margin-left: -307px;
+        
         background-size: cover;
         width: 438px;
     }
@@ -345,12 +388,11 @@ nav{
         margin-top:22px;
     }
 
-    h5 {
-        margin-right: 33%;
-    }
+    
      /* 白色遮色片 -1*/
      .inin_{
-        margin-right:331px;
+        margin-right: 26px;
+        /* border: 1px solid blue; */
     }
     .top_text{
         height: 161px;
@@ -358,11 +400,9 @@ nav{
         position: absolute;
         width: 450px;
         transition: .5s;
-        left: -130px;
+        left: -106px;
     }
-    .in_text > p{
-        left: 41%;
-    }
+  
     .div.top_out {
         width: 435px;
         
@@ -374,7 +414,7 @@ nav{
         width: 439px;
         height: 70px;
         margin-left: 5%;
-    }
+    }*/
     /* 版頭消失 -手機版*/
     div.nav ul {
         display: none;
@@ -383,7 +423,7 @@ nav{
         display: none;
     }
     body{
-        min-width: 500px;
+        min-width: 504px;
         /* border: blue 2px solid; */
     }
 
@@ -401,7 +441,13 @@ nav{
        display: none;
     }
 
-    
+    .text{
+        margin-left: 30px;
+    }
+
+    .in_text > p {
+        left: 70%;
+    }
  }   
 
  @media all and (max-width:574px) {

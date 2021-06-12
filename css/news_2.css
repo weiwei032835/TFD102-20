@@ -162,7 +162,7 @@ div.right_sidebar .float{
 }
 
 .news_photo{
-    width: 445px;
+    width: 520px;
 }
 
 /* 版頭換色文字效果 */
@@ -334,6 +334,9 @@ div.header ul li .news_1btn {
         margin-left: -175px;
     }
 
+    .news_photo {
+        width: 445px;
+    }
     /* 版頭消失 -手機版*/
     div.nav ul {
         display: none;

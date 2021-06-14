@@ -290,6 +290,9 @@ div.right_sidebar .float{
         width: 80%;
     }
 
+    .slick-list {
+        margin-top: -15% !important;
+    }
 }
 
 
@@ -395,6 +398,11 @@ div.right_sidebar .float{
     .ticket li h3 {
         margin-top: 7px;  
     }
+
+    .slick-list {
+        margin-top: -18% !important;
+    }
+
 }
 
 @media all and (min-width: 575px) and (max-width: 767px){
@@ -523,10 +531,10 @@ div.right_sidebar .float{
     }
 
     .slick-dotted.slick-slider {
-        margin-top: 14%;
+        margin-top: 20%;
     }
 
-
+    
 }
 @media all and (max-width:574px){
 
@@ -573,7 +581,7 @@ div.right_sidebar .float{
 
     .under{
         width: 453px;
-        height: 487px;
+        height: 510px;
         margin-left: 15px;
     }
     .under h2 {
@@ -588,10 +596,8 @@ div.right_sidebar .float{
     } 
 
     .traffic_icon{
-        width: 431px;
         margin: 0 auto;
         margin-top: 8px;
-        /* overflow-x: auto; 這裡有修改*/  
         height: 133px;
     }
 
@@ -659,7 +665,6 @@ h3 {
 }
 .slick-dotted.slick-slider {
     margin-bottom: 30px;
-    margin-top: 17%;
     width: 80%;
 }
 

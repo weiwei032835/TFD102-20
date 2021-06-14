@@ -47,8 +47,7 @@ h5{
     letter-spacing:.2rem;
     margin: 14px;
     margin-left: 300px;
-    /* border: 1px solid red; */
-    width: 160px;
+    width: 185px;
 }
 /* butten */
 .all{
@@ -57,7 +56,7 @@ h5{
     margin: 0 auto;
     justify-content: center;
     /* border: 1px solid blue; */
-    width: 300px;
+    margin-top: 3%;
 }
 
 .butten{
@@ -181,8 +180,10 @@ div.top_text > p{
     /* width: 600px;
     display: flex; */
     margin: -15px auto;
-    width: 700px;
+    /* width: 950px; */
     /* border: 1px saddlebrown solid; */
+    /* display: inline-flex; */
+    height: 25%;
 }
 .traffic_icon button{
     outline: none;
@@ -197,7 +198,7 @@ div.top_text > p{
     height: 345px;
     /* border: 1px solid red; */
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 2%;
     border-radius:15px;
     background-image: url(../images/traffic_icon/bigcar.jpg);
     background-size:114%;
@@ -285,6 +286,9 @@ div.right_sidebar .float{
         display: none;
     }
 
+    .slick-slide img {
+        width: 80%;
+    }
 
 }
 
@@ -318,31 +322,31 @@ div.right_sidebar .float{
     
     .grass_left{
         height: 300px;
-        width: 150px;
+        /* width: 150px; */
         margin-left: 600px;
-        margin-top: -48px;
-        margin-top: -94px;
+        margin-top: -84px;
+        /* margin-top: -94px; */
     }
 
     .grass_right{
         height: 300px;
         width: 150px;
-        margin-left: -70px;
-        margin-top: -313px;
+        margin-left: -60px;
+        margin-top: -315px;
     }
 
     .grass_left img{
-        height: 190px;
+        height: 164px;
         border-radius: 15px;
     }
 
     .grass_right img{
-        height: 230px;
+        height: 205px;
         border-radius: 15px;
     }
 
     .all{
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     h5{
@@ -384,6 +388,13 @@ div.right_sidebar .float{
         background-size: 110%;
         height: 300px;
     } 
+
+    .slick-slide img{
+        width: 100%;
+    }
+    .ticket li h3 {
+        margin-top: 7px;  
+    }
 }
 
 @media all and (min-width: 575px) and (max-width: 767px){
@@ -419,8 +430,8 @@ div.right_sidebar .float{
     .top{
         border: 4px solid #3DBFAC;
         background-color: rgb(255, 255, 255);
-        max-width: 500px;
-        height: 475px;
+        max-width: 514px;
+        height: 516px;
         border-radius: 15px;
         background-image:none;
     }
@@ -452,16 +463,17 @@ div.right_sidebar .float{
     }
 
     div.top_text{
-        height: 352px;
+        height: 378px;
     }
 
     .all{
-        margin-top: 20px;
+        margin-top: 56px;
     }
 
     .ticket {
         width: 454px;
         margin-top: -14px;
+        height: 196px;
     }
 
     .ticket li h3{
@@ -470,6 +482,7 @@ div.right_sidebar .float{
         margin-left: -26px;
     }
 
+    
     .remark {
         width: 400px;
 
@@ -489,14 +502,10 @@ div.right_sidebar .float{
         margin: 10px;
     } 
 
-    .traffic_icon{
-        width: 431px;
-        margin: 0 auto;
-        margin-top: 8px;
-        overflow-x: auto;
-        height: 133px;
-    }
-
+    .slick-slide img {
+        width: 136%;
+      }
+    
     
     .traffic_map{
         width: 456px;
@@ -507,6 +516,17 @@ div.right_sidebar .float{
         margin-top: 30px;
     } 
 
+    .slick-dotted.slick-slider {
+        margin-bottom: 31px;
+        margin-top: 14%;
+        width: 60%;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-top: 14%;
+    }
+
+
 }
 @media all and (max-width:574px){
 
@@ -514,11 +534,10 @@ div.right_sidebar .float{
         border: 4px solid #3DBFAC;
         background-color: rgb(255, 255, 255);
         width: 450px;
-        height: 445px;
         border-radius: 15px;
         margin-left: 13px;
         background-image:none;
-        height: 468px;
+        height: 490px;
     }
     h5 {
         margin-left: 152px;
@@ -526,10 +545,10 @@ div.right_sidebar .float{
     }
 
     .ticket{
-        width: 400px;
+        width: 420px;
         margin-top: -4px;
         height: 180px;
-        margin: none;
+        margin: 0;
     }
     
     .ticket li h3{
@@ -549,12 +568,12 @@ div.right_sidebar .float{
     }
 
     .all {
-        margin-top: 20px;
+        margin-top: 42px;
     }
 
     .under{
         width: 453px;
-        height: 520px;
+        height: 487px;
         margin-left: 15px;
     }
     .under h2 {
@@ -572,7 +591,7 @@ div.right_sidebar .float{
         width: 431px;
         margin: 0 auto;
         margin-top: 8px;
-        overflow-x: auto;
+        /* overflow-x: auto; 這裡有修改*/  
         height: 133px;
     }
 
@@ -583,10 +602,12 @@ div.right_sidebar .float{
         background-size: 110%;
         background-size: 151%;
         background-repeat:none;
-        margin-top: 30px;
+        
     } 
 
-    
+    /* h5 {
+        margin: 4px;
+    } */
 
     /* 版頭消失 -手機版*/
     div.nav ul {
@@ -636,32 +657,55 @@ h3 {
     margin-top: 10px;
     margin-left: 4px;
 }
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+    margin-top: 17%;
+    width: 80%;
+}
 
-/* 彈跳資訊 */
-button{
-    cursor: pointer;
+.traffic_icon img {
+    width: 75px;
+}
+
+  /* 輪播 */
+  
+  html, body {
+    margin: 0;
+    padding: 0;
   }
-  div.overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .slider {
+      width: 50%;
+      margin: 100px auto;
+  }
+
+  .slick-slide {
+    margin: 0px 20px;
+  }
+
+  /* .slick-slide img {
     width: 100%;
-    height: 100vh;
-    background-color: hsla(0, 0%, 0%, .5);
-    
-    display: none;
+  } */
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+
+
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
   }
   
-  /* 元素 article 置中及基本樣式 */
-  div.overlay > article{
-    background-color: white;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ddd;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .slick-active {
+    opacity: .5;
+  }
+
+  .slick-current {
+    opacity: 1;
   }

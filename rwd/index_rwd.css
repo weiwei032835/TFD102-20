@@ -406,7 +406,7 @@ nav.main_nav > ul.nav_list >li{
         display: none;
     }
     body{
-        min-width: 500px;
+        /* min-width: 500px; */
         /* border: blue 2px solid; */
     }
 
